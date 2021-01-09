@@ -1,0 +1,39 @@
+;digital RATIS clock
+;original made by Anthony_B
+;modified by yellowflip999
+;you are allowed to use this work in your routes but you have to keep the header intact
+
+; Hours
+
+[Object]
+States = digit.csv
+Position = 2.83, 4.46, -0.005
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 12] * 0.1]
+
+[Object]
+States = digit.csv
+Position = 2.86, 4.46, -0.005
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 12]]
+
+[Object]
+States = digit_separator.csv
+Position = 2.88, 4.46, -0.005
+
+; Minutes
+
+[Object]
+States = digit.csv
+Position = 2.90, 4.46, -0.005
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.0166666666666667, 60] * 0.1]
+
+[Object]
+States = digit.csv
+Position = 2.93, 4.46, -0.005
+TextureShiftYFunction = 0.1 * floor[time * 0.0166666666666667]
+
+; Letters
+
+[Object]
+States = letters.csv
+Position = 2.985, 4.46, -0.005
+TextureShiftYFunction = 0.5 * floor[mod[time * 0.000023148148148148148148148148148148, 3]]

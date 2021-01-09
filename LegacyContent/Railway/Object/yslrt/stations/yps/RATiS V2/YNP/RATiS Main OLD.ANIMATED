@@ -1,0 +1,23 @@
+[Include]
+nwl.ANIMATED
+;this is the blinking green white green white ratis
+Position = 2.2, 3.9, 0
+
+[Include]
+ratisframe.csv
+Position = 2.2, 3.9, 0
+;this is the frame for the RATIS
+
+[Include]
+nwl2.ANIMATED
+;this is the blinking green white green white ratis
+Position =  3.5, 3.9, 0.0990
+
+
+[Include]
+time\time.animated
+Position= -0.008,0,0
+
+[Include]
+time\time2.animated
+Position= 5.713,0,-0.305

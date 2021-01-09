@@ -1,0 +1,287 @@
+With Route
+Route.Comment WCRT Yishun LRT to Northpoint Shopping Centre
+Route.Timetable WCRT Yishun LRT to Northpoint Shopping Centre
+Route.Change 1
+Route.Gauge 1435
+Route.Elevation -11
+
+With Train
+Train.Folder yl150
+
+With Structure
+
+;Cut and Cover Tunnel;
+Structure.WallL(0) yslrt\tunnel\cnc_tl0\cnc_l_1.csv
+Structure.WallR(0) yslrt\tunnel\cnc_tl0\cnc_l_2.csv
+Structure.WallL(1) yslrt\tunnel\cnc_tl0\cnc_r_1.csv
+Structure.WallR(1) yslrt\tunnel\cnc_tl0\cnc_r_2.csv
+Structure.WallL(4) yslrt\tunnel\cnc_tl0\widecnc_l_1.csv
+Structure.WallR(4) yslrt\tunnel\cnc_tl0\widecnc_l_2.csv
+
+;Tunnel Boring Machine Made Tunnel;
+Structure.WallL(2) yslrt\tunnel\tbm_tl0\tbm_l_1.csv
+Structure.WallR(2) yslrt\tunnel\tbm_tl0\tbm_l_2.csv
+Structure.WallL(3) yslrt\tunnel\tbm_tl0\tbm_r_1.csv
+Structure.WallR(3) yslrt\tunnel\tbm_tl0\tbm_r_2.csv
+
+;Special;
+Structure.WallL(50) yslrt\tunnel\cnc_tl0\special\cnc_l_1.csv
+Structure.WallR(50) yslrt\tunnel\cnc_tl0\special\cnc_l_2.csv
+Structure.WallL(51) yslrt\tunnel\cnc_tl0\special\widecnc_l_1.csv
+Structure.WallR(51) yslrt\tunnel\cnc_tl0\special\widecnc_l_2.csv
+
+
+;Yishun Station;
+Structure.Freeobj(1) yslrt\stations\yis-nsc\yis\stn0.ANIMATED
+Structure.Freeobj(2) yslrt\stations\yis-nsc\yis\stn1.ANIMATED
+Structure.Freeobj(3) yslrt\stations\yis-nsc\yis\stn2.ANIMATED
+Structure.Freeobj(4) yslrt\stations\yis-nsc\yis\stn3.ANIMATED
+Structure.Freeobj(111) yslrt\stations\yis-nsc\yis\RATiS.ANIMATED
+Structure.Freeobj(112) yslrt\stations\yis-nsc\yis\RATiS2.ANIMATED
+Structure.Freeobj(113) yslrt\stations\yis-nsc\yis\RATiS3.ANIMATED
+Structure.Freeobj(114) yslrt\stations\yis-nsc\yis\RATiS4.ANIMATED
+
+;Northpoint Shopping Centre Station;
+Structure.Freeobj(5) yslrt\stations\yis-nsc\nsc\stn0.ANIMATED
+Structure.Freeobj(6) yslrt\stations\yis-nsc\nsc\stn1.ANIMATED
+Structure.Freeobj(7) yslrt\stations\yis-nsc\nsc\stn2.ANIMATED
+Structure.Freeobj(8) yslrt\stations\yis-nsc\nsc\stn3.ANIMATED
+Structure.Freeobj(115) yslrt\stations\yis-nsc\nsc\RATiS.ANIMATED
+
+;Cover;
+Structure.Freeobj(100) yslrt\tunnel\tbm_tl0\filler.csv
+Structure.Freeobj(101) yslrt\tunnel\tbm_tl0\filler_x.csv
+Structure.Freeobj(151) yslrt\tunnel\tbm_tl0\cover2.csv
+
+;Crossover;
+Structure.Freeobj(201) yslrt\tracks\xover_1.b3d
+Structure.Freeobj(202) yslrt\tracks\xover_2.b3d
+Structure.Freeobj(203) yslrt\tracks\xover_3.b3d
+Structure.Freeobj(204) yslrt\tracks\xover_4.b3d
+
+;Pointwork;
+Structure.Freeobj(301) yslrt\tracks\point_1.b3d
+Structure.Freeobj(302) yslrt\tracks\point_2.b3d
+Structure.Freeobj(303) yslrt\tracks\spcst.b3d
+Structure.Freeobj(304) yslrt\tracks\point_3.b3d
+
+;Dummy Tracks and Walls;
+Structure.Freeobj(350) yslrt\tracks\r_74.b3d
+Structure.Freeobj(351) yslrt\tunnel\cnc_tl0\widecnc_l_1.csv
+Structure.Freeobj(352) yslrt\tunnel\cnc_tl0\widecnc_l_2.csv
+Structure.Freeobj(353) yslrt\tunnel\cnc_tl0\topbottom.csv
+
+;Others;
+Structure.Freeobj(354) yslrt\tracks\buffer.b3d
+Structure.Freeobj(355) yslrt\tracks\buffer2.b3d
+Structure.Freeobj(356) yslrt\tunnel\end.csv
+
+;Tracks;
+Structure.Rail(0) yslrt\tracks\straight.b3d
+Structure.Rail(1) yslrt\tracks\r_800.b3d
+Structure.Rail(2) yslrt\tracks\r_-800.b3d
+Structure.Rail(3) yslrt\tracks\r_-600.b3d
+Structure.Rail(4) yslrt\tracks\r_1000.b3d
+Structure.Rail(5) yslrt\tracks\r_74.b3d
+Structure.Rail(6) yslrt\tracks\r_600.b3d
+Structure.Rail(7) yslrt\tracks\r_400.b3d
+Structure.Rail(8) yslrt\tracks\r_-150.b3d
+Structure.Rail(100) yslrt\tracks\nothing.csv
+
+With Track
+0
+Track.Brightness 0
+Track.Curve 0
+Track.Railstart 1;17;0;100
+Track.Railstart 2;-17;0;100
+Track.Railstart 3;17;0;100
+Track.Railstart 4;-17;0;100
+Track.Railtype 0;100
+Track.Wall 1;1;0
+Track.Wall 2;-1;1
+Track.Freeobj 2;301
+Track.Freeobj 1;302
+Track.Freeobj 2;151
+Track.Freeobj 2;101
+
+25
+Track.Railtype 1;0
+Track.Railtype 2;0
+Track.Railtype 3;0
+Track.Railtype 4;0
+Track.Rail 3;12.75
+Track.Rail 4;-12.75
+Track.Freeobj 2;101
+Track.Freeobj 3;303
+Track.Freeobj 4;303
+
+50
+Track.Freeobj 2;101
+Track.Rail 3;4.25
+Track.Rail 4;-4.25
+Track.Freeobj 0;304
+Track.Railtype 3;100
+Track.Railtype 4;100
+
+75
+Track.Freeobj 0;1
+Track.Railtype 0;0
+Track.Railend 3
+Track.Railend 4
+Track.Wallend 1
+Track.Wallend 2
+
+80
+Track.Buffer
+
+95
+Track.Brightness 0
+
+100
+Track.Brightness 200
+Track.Beacon 11;-1;0;14
+Track.Section 0;2;4
+Track.Sta Yishun Interchange;12.00;;;B;0;1;;60;;;
+Track.Section 0;101;103;104;105;106;107;108;109;110;111;112;113
+Track.Beacon 7;-1;0;075075
+Track.Brightness 200
+Track.Freeobj 0;2
+Track.Destination 0;-1;2200;-2201;1;
+
+124
+Track.Freeobj 0;111;-13.9;4
+Track.Freeobj 0;114;3.1;4
+
+125
+Track.Freeobj 0;3
+Track.Section 103;104;105;106;107;108;109;110;111;112
+
+126
+Track.Freeobj 0;112;13.9;4
+Track.Freeobj 0;113;-3.1;4
+
+150
+Track.Freeobj 0;4
+Track.Stop 0;;;0
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+175
+Track.Brightness 200
+Track.Wallend 1
+Track.Wallend 2
+Track.Railend 1
+Track.Railend 2
+Track.Wall 0;0;3
+Track.Pitch -50
+
+180
+Track.Brightness 0
+
+200
+Track.Beacon 7;-1;0;030030
+
+225
+Track.Pitch 0
+Track.Height -15
+Track.Curve -150
+Track.Railtype 0;8
+
+325
+Track.Curve 0
+Track.Railtype 0;100
+Track.Wall 0;1;0
+Track.Railstart 1;-6;0;0
+Track.Wall 1;-1;1
+Track.Freeobj 0;100;-6
+Track.Freeobj 0;202
+Track.Railstart 2;0;0;100
+Track.Wallend 2
+Track.Freeobj 1;356
+Track.Beacon 7;-1;0;075075
+Track.Beacon 6;-1;0;01010100
+
+335
+Track.Freeobj 1;355
+
+350
+Track.Railtype 0;0
+Track.Railtype 1;100
+Track.Freeobj 1;203
+Track.Freeobj 0;100;-6
+Track.Rail 2;-3
+Track.Beacon 6;-1;0;02020100
+Track.Beacon 11;-1;0;15
+Track.Announce yslrt/nxt_nsc.wav
+Track.Destination 0;-1;2202;2201;1;
+
+375
+Track.Railtype 1;0
+Track.Wall 0;0;2
+Track.Wall 1;0;3
+Track.Wallend 0
+Track.Freeobj 0;5
+Track.Rail 2;-6
+Track.Railend 2
+Track.Beacon 6;-1;0;01010050
+
+
+395
+Track.Brightness 0
+
+400
+Track.Beacon 11;-1;0;16
+Track.Sta Northpoint Shopping Centre;12.0210;;;R;0;1;;60;;;
+Track.Freeobj 0;6
+Track.Brightness 200
+Track.Beacon 6;-1;0;02020050
+
+424
+Track.Beacon 6;-1;0;01010001
+Track.Freeobj 0;115;3.1;4
+
+425
+Track.Stop 0;;;1
+Track.Freeobj 0;7
+Track.Beacon 6;-1;0;01010000
+
+449
+Track.Beacon 6;-1;0;02020001
+
+450
+Track.Beacon 6;-1;0;02020000
+Track.Stop 0;;;0
+Track.Freeobj 0;8
+
+475
+Track.Brightness 200
+Track.Railtype 0;100
+Track.Wall 0;1;0
+Track.Wall 1;-1;1
+Track.Freeobj 0;202
+Track.Freeobj 0;100;-6
+Track.Railstart 2;0;0;100
+Track.Beacon 7;-1;0;000000
+
+480
+Track.Brightness 0
+
+500
+Track.Railtype 1;100
+Track.Railtype 0;0
+Track.Freeobj 1;203
+Track.Freeobj 0;100;-6
+Track.Rail 2;-3
+
+515
+Track.Freeobj 0;354
+Track.Buffer
+
+525
+Track.Railtype 1;0
+Track.Wall 1;0;3
+Track.Railtype 0;100
+Track.Wallend 0
+Track.Rail 2;-6
+Track.Railend 2
+Track.Freeobj 0;356

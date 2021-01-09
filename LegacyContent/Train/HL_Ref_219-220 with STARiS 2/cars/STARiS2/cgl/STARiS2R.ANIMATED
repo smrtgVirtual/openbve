@@ -1,0 +1,59 @@
+[Object]
+States = starisrt5.csv, starisrt4.csv, starisrt3.csv, starisrt2.csv, starisrt1.csv, starisrt6.csv, starisrt7.csv, starisrt6.csv, starisrt7.csv, starisrt6.csv
+StateFunction = if[klaxon == 2, mod[value + 1, 21],-1]
+refreshrate = 1.00
+Position = -0.001,0,0
+
+;CG2;
+[Object]
+States = cg2rt.csv
+StateFunction = if[destination==1700,0,-1]
+
+;CG1 Next;
+[Object]
+States = cg1nxtrt.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb3.csv
+StateFunction = if[destination==1701,mod[value + 1, 20],-1]
+refreshrate = 0.5
+
+;CG1;
+[Object]
+States = cg1rt.csv, cg1rtb.csv
+StateFunction = if[destination==1702,value==0,-1]
+refreshrate = 0.8
+
+;CG Next;
+[Object]
+States = cgnxtrt.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb3.csv
+StateFunction = if[destination==1703,mod[value + 1, 20],-1]
+refreshrate = 0.5
+
+;CG;
+[Object]
+States = cgrt.csv, cgrtb.csv
+StateFunction = if[destination==1704,value==0,-1]
+refreshrate = 0.8
+
+;Interchanges - VFD will show the message, TrainVision remains;
+;CG1DTL;
+[Object]
+States = cg1nxtrt.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb.csv, cg1nxtrtb2.csv, cg1nxtrtb3.csv
+StateFunction = if[destination==1705,mod[value + 1, 20],-1]
+refreshrate = 0.5
+
+;CG1DTLARR;
+[Object]
+States = cg1rt.csv, cg1rtb.csv
+StateFunction = if[destination==1706,value==0,-1]
+refreshrate = 0.8
+
+;CGTerm;
+[Object]
+States = cgnxtrt.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb.csv, cgnxtrtb2.csv, cgnxtrtb3.csv
+StateFunction = if[destination==1707,mod[value + 1, 20],-1]
+refreshrate = 0.5
+
+;CGTermArr;
+[Object]
+States = cgrt.csv, cgrtb.csv
+StateFunction = if[destination==1708,value==0,-1]
+refreshrate = 0.8

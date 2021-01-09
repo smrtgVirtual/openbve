@@ -1,0 +1,101 @@
+;psd_c1
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-133.05
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-127.7
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-122.35
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-116.95
+
+;psd_c2
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-110.3
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-105
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-99.6
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-94.2
+
+;psd_c3
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-87.55
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-82.2
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-76.8
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-71.5
+
+;psd_c4
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-64.8
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-59.5
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-54.1
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-48.7
+
+;psd_c5
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-42.05
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-36.75
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-31.35
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-25.95
+
+;psd_c6
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-19.20
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-13.85
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-8.50
+
+[Object]
+States = psd_panel_L.csv
+Position = -2,1.17,-3.10

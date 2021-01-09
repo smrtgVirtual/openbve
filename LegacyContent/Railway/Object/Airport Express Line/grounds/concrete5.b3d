@@ -1,0 +1,19 @@
+;description=concrete ground
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -100, -1, 25
+Vertex 100, -1, 25
+Vertex 100, 0, 0
+Vertex -100, 0, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 16, 0
+Coordinates 2, 16, 12
+Coordinates 3, 0, 12
+
+

@@ -1,0 +1,11 @@
+CreateMeshBuilder,
+AddVertex,-0.2,0,
+AddVertex,0.2,0,0
+AddVertex,0.2,0.1,-0.02
+AddVertex,-0.2,0.1,-0.02
+LoadTexture,cm_off.bmp
+AddFace2,3,2,1,0
+SetTextureCoordinates,0,1,1
+SetTextureCoordinates,1,0,1
+SetTextureCoordinates,2,0,0
+SetTextureCoordinates,3,1,0

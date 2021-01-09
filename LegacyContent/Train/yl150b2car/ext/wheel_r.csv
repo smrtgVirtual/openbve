@@ -1,0 +1,10 @@
+CreateMeshBuilder,
+Cylinder,15,0.45,0.45,0.03
+LoadTexture,under.bmp
+Rotate,0,0,1,90
+
+CreateMeshBuilder,
+Cylinder,15,0.35,0.35,0.1
+LoadTexture,wheelout.bmp
+Rotate,0,0,1,90
+Translate,0.06,0,0

@@ -1,0 +1,8 @@
+[Include]
+platformA\bkj2.csv
+default\frame.csv
+default\platformA.csv
+default\topbar.csv
+platformA\subbkj4.csv
+ratisclock\ratisclock.ANIMATED
+Position = 11.0, 3.8, 0

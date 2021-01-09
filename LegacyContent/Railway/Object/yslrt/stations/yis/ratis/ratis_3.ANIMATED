@@ -1,0 +1,6 @@
+;Board;
+[Object]
+States = ratis_3.csv
+
+[Object]
+States = disp_3.csv

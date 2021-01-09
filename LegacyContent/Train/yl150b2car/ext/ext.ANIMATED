@@ -1,0 +1,32 @@
+[Include]
+sample.ANIMATED
+Position = 0,0,-12.5
+
+[Include]
+grabpoles_multiple.csv
+Position = 0,1.05,-9.90
+
+
+[Include]
+grabpoles_multiple.csv
+Position = 0,1.05,-7.50
+
+[Include]
+grabpoles_multiple.csv
+Position = 0,1.05,-1.55
+
+[Include]
+grabpoles_multiple.csv
+Position = 0,1.05,1.96
+
+[Include]
+grabpoles_multiple.csv
+Position = 0,1.05,7.82
+
+[Include]
+grabpoles_multiple.csv
+Position = 0,1.05,9.92
+
+[Include]
+polelong.csv
+Position = 0,0,0.2

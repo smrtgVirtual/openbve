@@ -1,0 +1,24 @@
+[Include]
+platformB\hbvarr.ANIMATED
+default\frame psd.csv
+default\platformB.csv
+ratisclock\ratisclock.ANIMATED
+Position = 4.0, 3.8, -2
+
+[Object]
+Position = 4.0, 3.8, -2
+States = platformB\hbv2.csv, empty.csv, platformB\hbv1.csv
+StateFunction = If[trackdistance>-200,if[trackdistance>-30,if[trackdistance[0]<-18.25,1,2],1],0]
+;1st - after train departs
+;2nd - when train in station
+;3rd - before train arrives
+
+[Object]
+Position = 4.0, 3.8, -2
+States = platformB\subhbv4.csv, platformB\arrhbv2.csv, platformB\subhbv2.csv
+StateFunction = If[trackdistance>-200,if[trackdistance>-30,if[trackdistance[0]<-18.25,1,2],1],0]
+
+[Object]
+Position = 4.0, 3.8, -2
+States = default\topbar.csv, empty.csv, default\topbar.csv
+StateFunction = If[trackdistance>-200,if[trackdistance>-30,if[trackdistance[0]<-18.25,1,2],1],0]

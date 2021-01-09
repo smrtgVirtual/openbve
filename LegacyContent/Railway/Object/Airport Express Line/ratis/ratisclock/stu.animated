@@ -1,0 +1,45 @@
+;digital RATIS clock
+;original made by Anthony_B
+;modified by yellowflip999
+;you are allowed to use this work in your routes but you have to keep the header intact
+
+; Hours
+
+[Object]
+States = digit.csv, empty.csv, empty.csv
+Position = 2.83, 4.46, -0.005
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 12] * 0.1]
+StateFunction = If[trackdistance>-60,if[time<50385,if[time>50385,1,2],1],0]
+
+[Object]
+States = digit.csv, empty.csv, empty.csv
+Position = 2.86, 4.46, -0.005
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 12]]
+StateFunction = If[trackdistance>-60,if[time<50385,if[time>50385,1,2],1],0]
+
+[Object]
+States = digit_separator.csv, empty.csv, empty.csv
+Position = 2.88, 4.46, -0.005
+StateFunction = If[trackdistance>-60,if[time<50385,if[time>50385,1,2],1],0]
+
+; Minutes
+
+[Object]
+States = digit.csv, empty.csv, empty.csv
+Position = 2.90, 4.46, -0.005
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.0166666666666667, 60] * 0.1]
+StateFunction = If[trackdistance>-60,if[time<50385,if[time>50385,1,2],1],0]
+
+[Object]
+States = digit.csv, empty.csv, empty.csv
+Position = 2.93, 4.46, -0.005
+TextureShiftYFunction = 0.1 * floor[time * 0.0166666666666667]
+StateFunction = If[trackdistance>-60,if[time<50385,if[time>50385,1,2],1],0]
+
+; Letters
+
+[Object]
+States = letters.csv, empty.csv, empty.csv
+Position = 2.985, 4.46, -0.005
+TextureShiftYFunction = 0.5 * floor[mod[time * 0.000023148148148148148148148148148148, 3]]
+StateFunction = If[trackdistance>-60,if[time<50385,if[time>50385,1,2],1],0]

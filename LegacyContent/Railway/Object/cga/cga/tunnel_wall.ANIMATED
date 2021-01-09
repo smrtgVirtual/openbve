@@ -1,0 +1,15 @@
+[Object]
+States = tunnel_wall.csv
+
+[Object]
+States = light_dark.csv
+Position = -3.125,2.75,12.5
+
+[Object]
+States = noticeboard_empty.csv
+Position = -3.125,2,12.5
+
+[Object]
+States = psd_light_dark.csv, psd_light_bright.csv
+StateFunction = If[trackdistance>-2.67&trackdistance<0.33,if[leftdoorstarget == 0,if[0<leftdoors,0,1],if[0.3<leftdoors,0,1]],1]
+Position = -3.125,3.5,12.5

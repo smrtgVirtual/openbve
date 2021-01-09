@@ -1,0 +1,9 @@
+CreateMeshBuilder,,,,
+AddVertex,0,4.8,0,
+AddVertex,0,29.8,0,
+AddVertex,4,29.8,0,
+AddVertex,8,4.8,0,
+AddFace2,0,1,2,3
+SetColor,255,255,100,
+,,,,
+TranslateAll,0,0.2,0,

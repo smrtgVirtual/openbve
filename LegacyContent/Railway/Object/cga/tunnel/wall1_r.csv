@@ -1,0 +1,108 @@
+;Wall;
+
+CreateMeshBuilder,
+AddVertex, 1.5, 4.5, 0,
+AddVertex, 2.6, 2, 0,
+AddVertex, 1.5, 0, 0,
+AddVertex, 1.5, 4.5, 25,
+AddVertex, 2.6, 2, 25,
+AddVertex, 1.5, 0, 25,
+ADDFace2, 0,1,4,3
+ADDFace2, 4,5,2,1
+SETColor, 0,0,0
+
+;Lights;
+CreateMeshBuilder,
+AddVertex, 2.35, 2.4, 12,
+AddVertex, 2.35, 2.5, 12,
+AddVertex, 2.35, 2.5, 12,
+AddVertex, 2.35, 2.4, 13,
+AddVertex, 2.35, 2.5, 13,
+AddVertex, 2.35, 2.5, 13,
+ADDFace2, 0,1,4,3
+ADDFace2, 4,5,2,1
+SETColor, 50,50,50
+
+;Ceiling;
+
+CreateMeshBuilder,
+AddVertex,1.5,4.5,25,
+AddVertex,1.5,4.5,0,
+AddVertex,0,4.5,0,
+AddVertex,0,4.5,25,
+AddFace2,3,2,1,0
+SetColor,0,0,0
+
+;Wires;
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2.4,1.7,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2.4,1.8,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2.5,1.9,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2.5,2,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2.5,2.1,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2.4,2.2,12.5
+SetColor,25,25,25
+
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2.2,2.7,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2.1,2.8,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2.1,2.9,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2,3,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2,3.1,12.5
+SetColor,25,25,25
+
+CreateMeshBuilder,
+Cylinder,10,0.025,0.025,25
+Rotate,1,0,0,90
+Translate,2,3.2,12.5
+SetColor,25,25,25

@@ -1,0 +1,38 @@
+CreateMeshBuilder,
+AddVertex,1.8,1.17,1.78,
+AddVertex,1.8,1.17,-1.78,
+AddVertex,1.86,1.17,-1.78,
+AddVertex,1.86,1.17,1.78,
+AddFace2,3,2,1,0
+SetColor,50,50,50
+
+CreateMeshbuilder,
+ADDVertex, 1.86, 1.17, -1.78,
+ADDVertex, 1.86, 1.14, -1.78,
+ADDVertex, 1.86, 1.14, -1.78,
+ADDVertex, 1.86, 1.17, 1.78,
+ADDVertex, 1.86, 1.17, 1.78,
+ADDVertex, 1.86, 1.14, 1.78,
+ADDFace2, 3,1,4,0
+ADDFace2, 1, 2, 5, 4,
+SetColor, 50,50,50
+
+CreateMeshBuilder,
+AddVertex,1.8,1.14,1.78,
+AddVertex,1.8,1.14,-1.78,
+AddVertex,1.86,1.14,-1.78,
+AddVertex,1.86,1.14,1.78,
+AddFace2,3,2,1,0
+SetColor,50,50,50
+
+CreateMeshBuilder,
+AddVertex,1.8,1.171,0.89,
+AddVertex,1.8,1.171,-0.89,
+AddVertex,1.7,1.171,-0.89,
+AddVertex,1.7,1.171,0.89,
+AddFace2,0,1,2,3
+LoadTexture,doorstrip.bmp
+SETTextureCoordinates,0,1,1,
+SETTextureCoordinates,1,1,0,
+SETTextureCoordinates,2,0,0,
+SETTextureCoordinates,3,0,1,

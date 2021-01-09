@@ -1,0 +1,21 @@
+;Real Travel Information System (RATIS)
+;Coded by boylush for openBVE/TSF North South East West Line Singapore
+;RATIS test frame
+;Fixed Object
+
+;Changelog
+;03 MAR 2018: New Texture
+
+;FRONTTRANSPARENCY;
+CreateMeshBuilder
+AddVertex,-0.25,0.05,-0.019
+AddVertex,-0.25,0.35,-0.019
+AddVertex,0.25,0.35,-0.019
+AddVertex,0.25,0.05,-0.019
+LoadTexture, ../../texture/tmspy.png, ../../texture/tmspy.png
+AddFace,0,1,2,3
+SetTextureCoordinates,2,1,0
+SetTextureCoordinates,1,0,0
+SetTextureCoordinates,0,0,1
+SetTextureCoordinates,3,1,1
+

@@ -1,0 +1,9 @@
+[Object]
+States = ktb_left.csv, ktb_leftB.csv
+StateFunction = if[destination==2110,value==0,-1]
+refreshrate = 0.8
+Position = 0,0,6.53
+
+[Object]
+States = ktb.csv
+StateFunction = if[destination==2110,0,-1]

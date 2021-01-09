@@ -1,0 +1,135 @@
+HL16 Station
+.Destination 0;-1;0;-1501;1;
+
+;;
+
+HL15 Next
+.Destination 0;-1;1;1500;1;
+
+HL15 Station
+.Destination 0;-1;2;1501;1;
+
+;;
+
+HL14 Next
+.Destination 0;-1;3;1502;1;
+
+HL14 Station
+.Destination 0;-1;4;1503;1;
+
+;;
+
+HL13 Next
+.Destination 0;-1;5;1504;1;
+
+
+HL13 Station
+.Destination 0;-1;6;1505;1;
+
+;;
+
+HL12 Next
+.Destination 0;-1;7;1506;1;
+
+
+HL12 Station
+.Destination 0;-1;8;1507;1;
+
+;;
+
+HL11 Next
+.Destination 0;-1;9;1508;1;
+
+
+HL11 Station
+.Destination 0;-1;10;1509;1;
+
+;;
+
+HL10 Next
+.Destination 0;-1;11;1510;1;
+
+
+HL10 Station
+.Destination 0;-1;12;1511;1;
+
+;;
+
+HL9 Next
+.Destination 0;-1;13;1512;1;
+
+
+HL9 Station
+.Destination 0;-1;14;1513;1;
+
+;WE STOPPED AROUND HERE;
+
+HL8 Next
+.Destination 0;-1;15;1514;1;
+
+
+HL8 Station
+.Destination 0;-1;16;1515;1;
+
+;;
+
+HL7 Next
+.Destination 0;-1;17;1516;1;
+
+
+HL7 Station
+.Destination 0;-1;18;1517;1;
+
+;;
+
+HL6 Next
+.Destination 0;-1;19;1518;1;
+
+
+HL6 Station
+.Destination 0;-1;20;1519;1;
+
+;;
+
+HL5 Next
+.Destination 0;-1;21;1520;1;
+
+
+HL5 Station
+.Destination 0;-1;22;1521;1;
+
+;;
+
+HL4 Next
+.Destination 0;-1;23;1522;1;
+
+
+HL4 Station
+.Destination 0;-1;24;1523;1;
+
+;;
+
+HL3 Next
+.Destination 0;-1;25;1524;1;
+
+
+HL3 Station
+.Destination 0;-1;26;1525;1;
+
+;;
+
+HL2 Next
+.Destination 0;-1;27;1526;1;
+
+
+HL2 Station
+.Destination 0;-1;28;1527;1;
+
+;;
+
+HL1 Next
+.Destination 0;-1;29;1528;1;
+
+
+HL1 Station
+.Destination 0;-1;30;1529;1;

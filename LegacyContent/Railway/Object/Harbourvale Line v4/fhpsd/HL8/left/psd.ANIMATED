@@ -1,0 +1,864 @@
+;Panel 5.40m Normal;
+[Object]
+States = psd_glass_5.40m.csv
+Position = -2,1.17,-143.65
+
+;Panel 5.40m Normal;
+[Object]
+States = psd_glass_5.40m.csv
+Position = -2,1.17,-141.90
+
+;indicator
+[Object]
+States = indicator_on_opp.csv
+Position = -1.75,2.9,-141.7
+
+;Panel 5.40m Normal;
+[Object]
+States = psd_glass_5.40m.csv
+Position = -2,1.17,-140.15
+
+;Panel 5.40m Normal;
+[Object]
+States = psd_glass_5.40m.csv
+Position = -2,1.17,-138.40
+
+;psd_c1
+;Panel Interior;
+[Object]
+States = panel_int.csv
+Position = -1.953,1.17,-133.05
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-133.05
+
+;Panel 5.35m Next;
+[Object]
+States = psd_glass_5.35mnext.csv
+Position = -2,1.17,-133.05
+
+;Panel Map;
+[Object]
+States = psd_glass_doormap.csv
+Position = -2,1.17,-127.7
+
+;Panel 5.35m Map;
+[Object]
+States = psd_glass_5.35mmap.csv
+Position = -2,1.17,-127.7
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-122.35
+
+;Panel 5.40m Next;
+[Object]
+States = psd_glass_5.40mnext.csv
+Position = -2,1.17,-122.35
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-116.95
+
+;Panel Long Next;
+[Object]
+States = psd_glass_6.65m.csv
+Position = -2,1.17,-116.95
+
+;End of C1;
+
+;Desto;
+;Door 1-2;
+[Object]
+States = sign.csv
+Position = -2,1.17,-133.05
+
+;Door 2-3;
+[Object]
+States = sign.csv
+Position = -2,1.17,-127.7
+
+;Door 3-4;
+[Object]
+States = sign.csv
+Position = -2,1.17,-122.325
+
+;Door 4-5;
+[Object]
+States = sign.csv
+Position = -2,1.17,-116.3
+
+;Door 1;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-133.025
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-133.025
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 2;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-127.675
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-127.675
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 3;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-122.325
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-122.325
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 4;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-116.925
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-116.925
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door Light;
+
+;Door 1;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-133.025
+
+;Door 2;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-127.675
+
+;Door 3;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-122.325
+
+;Door 4;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-116.925
+
+;psd_c2
+;Panel Platform 2b;
+[Object]
+States = psd_glass_doorplat2b.csv
+Position = -2,1.17,-110.3
+
+;Panel 5.30m Map;
+[Object]
+States = psd_glass_5.30mmap.csv
+Position = -2,1.17,-110.3
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-105
+
+;Panel 5.40m Next;
+[Object]
+States = psd_glass_5.40mnext.csv
+Position = -2,1.17,-105
+
+;Panel Platform 2b;
+[Object]
+States = psd_glass_doorplat2b.csv
+Position = -2,1.17,-99.6
+
+;Panel 5.40m Map;
+[Object]
+States = psd_glass_5.40mmap.csv
+Position = -2,1.17,-99.6
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-94.2
+
+[Object]
+States = psd_glass_6.65m.csv
+Position = -2,1.17,-94.2
+
+;End of C2;
+
+;Desto;
+;Door 1-2;
+[Object]
+States = sign.csv
+Position = -2,1.17,-110.325
+
+;Door 2-3;
+[Object]
+States = sign.csv
+Position = -2,1.17,-104.975
+
+;Door 3-4;
+[Object]
+States = sign.csv
+Position = -2,1.17,-99.575
+
+;Door 4-5;
+[Object]
+States = sign.csv
+Position = -2,1.17,-93.55
+
+;Door 1;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-110.275
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-110.275
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 2;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-104.975
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-104.975
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 3;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-99.575
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-99.575
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 4;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-94.175
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-94.175
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door Light;
+
+;Door 1;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-110.275
+
+;Door 2;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-104.975
+
+;Door 3;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-99.575
+
+;Door 4;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-94.175
+
+;psd_c3
+;Panel Platform 2b;
+[Object]
+States = psd_glass_doorplat2b.csv
+Position = -2,1.17,-87.55
+
+;Panel 5.35m Map;
+[Object]
+States = psd_glass_5.35mmap.csv
+Position = -2,1.17,-87.55
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-82.2
+
+;Panel 5.40m Next;
+[Object]
+States = psd_glass_5.40mnext.csv
+Position = -2,1.17,-82.2
+
+;Panel Platform 2b;
+[Object]
+States = psd_glass_doorplat2b.csv
+Position = -2,1.17,-76.8
+
+;Panel 5.30m Map;
+[Object]
+States = psd_glass_5.30mmap.csv
+Position = -2,1.17,-76.8
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-71.5
+
+[Object]
+States = psd_glass_6.70m.csv
+Position = -2,1.17,-71.5
+
+;End of C3;
+
+;Desto;
+;Door 1-2;
+[Object]
+States = sign.csv
+Position = -2,1.17,-87.55
+
+;Door 2-3;
+[Object]
+States = sign.csv
+Position = -2,1.17,-82.175
+
+;Door 3-4;
+[Object]
+States = sign.csv
+Position = -2,1.17,-76.825
+
+;Door 4-5;
+[Object]
+States = sign.csv
+Position = -2,1.17,-70.925
+
+;Door 1;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-87.525
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-87.525
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 2;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-82.175
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-82.175
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 3;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-76.775
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-76.775
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 4;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-71.475
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-71.475
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door Light;
+
+;Door 1;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-87.525
+
+;Door 2;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-82.175
+
+;Door 3;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-76.775
+
+;Door 4;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-71.475
+
+;psd_c4
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-64.8
+
+;Panel 5.30m Next;
+[Object]
+States = psd_glass_5.30mnext.csv
+Position = -2,1.17,-64.8
+
+;Panel Platform 2b;
+[Object]
+States = psd_glass_doorplat2b.csv
+Position = -2,1.17,-59.5
+
+;Panel 5.40m Map;
+[Object]
+States = psd_glass_5.40mmap.csv
+Position = -2,1.17,-59.5
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-54.1
+
+;Panel 5.40m Next;
+[Object]
+States = psd_glass_5.40mnext.csv
+Position = -2,1.17,-54.1
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-48.7
+
+[Object]
+States = psd_glass_6.65m.csv
+Position = -2,1.17,-48.7
+
+;End of C4;
+
+;Desto;
+;Door 1-2;
+[Object]
+States = sign.csv
+Position = -2,1.17,-64.825
+
+;Door 2-3;
+[Object]
+States = sign.csv
+Position = -2,1.17,-59.475
+
+;Door 3-4;
+[Object]
+States = sign.csv
+Position = -2,1.17,-54.075
+
+;Door 4-5;
+[Object]
+States = sign.csv
+Position = -2,1.17,-48.05
+
+;Door 1;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-64.775
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-64.775
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 2;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-59.475
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-59.475
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 3;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-54.075
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-54.075
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 4;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-48.675
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-48.675
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door Light;
+
+;Door 1;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-64.775
+
+;Door 2;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-59.475
+
+;Door 3;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-54.075
+
+;Door 4;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-48.675
+
+;psd_c5
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat2b.csv
+Position = -2,1.17,-42.05
+
+;Panel 5.30m Map;
+[Object]
+States = psd_glass_5.30mmap.csv
+Position = -2,1.17,-42.05
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-36.75
+
+;Panel 5.40m Next;
+[Object]
+States = psd_glass_5.40mnext.csv
+Position = -2,1.17,-36.75
+
+;Panel Platform 2b;
+[Object]
+States = psd_glass_doorplat2b.csv
+Position = -2,1.17,-31.35
+
+;Panel 5.40m Map;
+[Object]
+States = psd_glass_5.40mmap.csv
+Position = -2,1.17,-31.35
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-25.95
+
+[Object]
+States = psd_glass_6.75m.csv
+Position = -2,1.17,-25.95
+
+;End of C5;
+
+;Desto;
+;Door 1-2;
+[Object]
+States = sign.csv
+Position = -2,1.17,-42.075
+
+;Door 2-3;
+[Object]
+States = sign.csv
+Position = -2,1.17,-36.725
+
+;Door 3-4;
+[Object]
+States = sign.csv
+Position = -2,1.17,-31.325
+
+;Door 4-5;
+[Object]
+States = sign.csv
+Position = -2,1.17,-25.25
+
+;Door 1;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-42.025
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-42.025
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 2;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-36.725
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-36.725
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 3;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-31.325
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-31.325
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 4;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-25.925
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-25.925
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door Light;
+
+;Door 1;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-42.025
+
+;Door 2;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-36.725
+
+;Door 3;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-31.325
+
+;Door 4;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-25.925
+
+;psd_c6
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-19.20
+
+;Panel 5.35m Next;
+[Object]
+States = psd_glass_5.35mnext.csv
+Position = -2,1.17,-19.20
+
+;Panel Platform 2b;
+[Object]
+States = psd_glass_doorplat2b.csv
+Position = -2,1.17,-13.85
+
+;Panel 5.35m Map;
+[Object]
+States = psd_glass_5.35mmap.csv
+Position = -2,1.17,-13.85
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-8.50
+
+;Panel 5.40m Next;
+[Object]
+States = psd_glass_5.40mnext.csv
+Position = -2,1.17,-8.50
+
+;Panel Platform;
+[Object]
+States = psd_glass_doorplat.csv
+Position = -2,1.17,-3.10
+
+;Desto;
+;Door 1-2;
+[Object]
+States = sign.csv
+Position = -2,1.17,-19.20
+
+;Door 2-3;
+[Object]
+States = sign.csv
+Position = -2,1.17,-13.85
+
+;Door 3-4;
+[Object]
+States = sign.csv
+Position = -2,1.17,-8.475
+
+;Door 1;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-19.175
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-19.175
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 2;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-13.835
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-13.835
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 3;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-8.475
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-8.475
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door 4;
+[Object]
+States = psd_door_1.csv
+Position = -1.9,1.17,-3.075
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,1.837 * leftdoors[0] * leftdoors[0],0.9],if[0.3<leftdoors,1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+[Object]
+States = psd_door_2.csv
+Position = -1.9,1.17,-3.075
+TranslateZFunction = If[distance>1.5,0,if[leftdoorstarget==0,if[leftdoors<0.7,-1.837 * leftdoors[0] * leftdoors[0],-0.9],if[0.3<leftdoors,-1.837*(leftdoors[0]-0.3)*(leftdoors[0]-0.3),0]]]
+
+;Door Light;
+
+;Door 1;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-19.175
+
+;Door 2;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-13.835
+
+;Door 3;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-8.475
+
+;Door 4;
+[Object]
+States = on.csv, off.csv
+StateFunction = If[distance>1.5,1,If[leftdoorstarget==1,If[0.3>leftdoors & 0<leftdoors,1,0],If[0.7>leftdoors & 0<leftdoors,value == 0,if[leftdoors==0,1,0]]]]
+RefreshRate = 0.5
+Position = -2.001,1.125,-3.075
+
+;indicator
+;[Object]
+;States = indicator_off.csv, indicator_on.csv
+;StateFunction = If[distance>1.5,1,If[leftdoors==0,1,If;[leftdoorstarget==1,0,0]]]
+;Position = -0.7,3,8
+
+[Object]
+States = psd_glass_6.75m.csv
+Position = -2,1.17,-3.10
+
+[Object]
+States = psd_glass_6.75m.csv
+Position = -2,1.17,0
+
+[Object]
+States = psd_glass_6.75m.csv
+Position = -2,1.17,3.10
+
+;[Object]
+;States = psd_glass_6.75m.csv
+;Position = -2,1.17,2.15
+

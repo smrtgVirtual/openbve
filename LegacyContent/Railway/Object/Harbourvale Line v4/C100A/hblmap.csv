@@ -1,0 +1,12 @@
+;Panels Ads;,,,,
+Createmeshbuilder,,,,
+AddVertex,-1.235,3.35,0,
+AddVertex,-1.235,3.35,1.3,
+AddVertex,-1.122,3.55,1.3,
+AddVertex,-1.122,3.55,0,
+AddFace2,0,3,2,1
+LoadTexture,panels/maphbl.png,,,
+SetTextureCoordinates,0,0,1,
+SetTextureCoordinates,1,0,0,
+SetTextureCoordinates,2,1,0,
+SetTextureCoordinates,3,1,1,

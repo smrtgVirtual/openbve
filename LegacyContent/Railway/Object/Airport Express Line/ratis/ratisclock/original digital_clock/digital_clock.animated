@@ -1,0 +1,49 @@
+[Object]
+States = back.csv
+Position = 0, 0, 0
+
+; Hours
+
+[Object]
+States = digit.csv
+Position = -0.51, 0, 0
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 24] * 0.1]
+
+[Object]
+States = digit.csv
+Position = -0.33, 0, 0
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 24]]
+
+[Object]
+States = digit_separator.csv
+Position = -0.21, 0, 0
+
+; Minutes
+
+[Object]
+States = digit.csv
+Position = -0.09, 0, 0
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.0166666666666667, 60] * 0.1]
+
+[Object]
+States = digit.csv
+Position = 0.09, 0, 0
+TextureShiftYFunction = 0.1 * floor[time * 0.0166666666666667]
+
+[Object]
+States = digit_separator.csv
+Position = 0.21, 0, 0
+StateFunction = value == 0
+RefreshRate = 0.5
+
+; Seconds
+
+[Object]
+States = digit.csv
+Position = 0.33, 0, 0
+TextureShiftYFunction = 0.1 * floor[mod[time, 60] * 0.1]
+
+[Object]
+States = digit.csv
+Position = 0.51, 0, 0
+TextureShiftYFunction = 0.1 * floor[time]

@@ -1,0 +1,7 @@
+[Include]
+platformA\bkjarr.ANIMATED
+default\frame side.csv
+default\platformA.csv
+platformA\arrbkj2.csv
+ratisclock\ratisclock.ANIMATED
+Position = 8.0, 3.8, 0

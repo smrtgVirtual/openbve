@@ -1,0 +1,16 @@
+CreateMeshBuilder
+AddVertex,0.41, 0.365, -0.2065
+AddVertex,0.470, 0.365, -0.2065
+AddVertex,0.470, 0.31, -0.2065
+AddVertex,0.41, 0.31, -0.2065
+AddFace,0,1,2,3
+SetEmissiveColor,255,255,255
+
+LoadTexture,letters.png
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,0.5
+SetTextureCoordinates,3,0,0.5
+
+,,,,
+RotateAll,0,1,0,180

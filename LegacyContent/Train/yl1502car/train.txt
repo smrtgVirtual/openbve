@@ -1,0 +1,22 @@
+YL150 Set 01 Version 0.5
+For use in Yishun LRT.
+
+Operator: WCRT
+
+Instructions:
+Press 2 to activate ATC
+Press 3 to activate ATO.
+ATC must be on for ATO to work.
+ATOs work for Service A and C, Service B please drive manually or AI.
+Press + for "Doors Closing" announcement.
+
+AM: Automated Mode - Train runs and stops at stations by itself according to the speed limit.
+CM: Coded Manual - Train manually run, but automatically braked at speed limit.
+RM: Restricted Manual - Train manually run without safety system's hinderance but motors automatically cut off at 15km/h, and brakes automatically engaged at 19km/h.
+
+ATC + ATO = AM
+ATC + No ATO = CM
+No ATC + ATO = RM
+No ATC + No ATO = RM
+
+Credits to Odakyufan for the original plugin.

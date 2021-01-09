@@ -1,0 +1,10 @@
+[Include]
+blacktonjunction\boardb.csv
+;this is the blinking green white green white ratis
+default\frame.csv
+default\platformA.csv
+default\topbar.csv
+donotboard\dnb3.csv
+blacktonjunction\topboardb.csv
+ratisclock\ratisclock.ANIMATED
+Position = -8.0, 3.8, 0

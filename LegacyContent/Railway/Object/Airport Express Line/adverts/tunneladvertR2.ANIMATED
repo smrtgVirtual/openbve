@@ -1,0 +1,31 @@
+[Object]
+States = tunneladvert4r.csv
+Position = 0,0,-129.875
+
+[Object]
+States = tunneladvert1r.csv
+Position = 0,0,-113.125
+
+[Object]
+States = tunneladvert3r.csv
+Position = 0,0,-96.4
+
+[Object]
+States = tunneladvert4r.csv
+Position = 0,0,-79
+
+[Object]
+States = tunneladvert2r.csv
+Position = 0,0,-61.65
+
+[Object]
+States = tunneladvert1r.csv
+Position = 0,0,-44.875
+
+[Object]
+States = tunneladvert3r.csv
+Position = 0,0,-28.15
+
+[Object]
+States = tunneladvert2r.csv
+Position = 0,0,-10.675

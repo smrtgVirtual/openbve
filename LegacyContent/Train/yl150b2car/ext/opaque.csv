@@ -1,0 +1,17 @@
+CreateMeshBuilder,
+AddVertex,1.5,3.3,0
+AddVertex,1.7,2,0
+AddVertex,-1.7,2,0
+AddVertex,-1.5,3.3,0
+AddFace2,3,2,1,0
+LoadTexture,divider.bmp
+SetEmissiveColor,255,255,255
+
+CreateMeshBuilder,
+AddVertex,1.7,2,0
+AddVertex,1.7,1,0
+AddVertex,-1.7,1,0
+AddVertex,-1.7,2,0
+AddFace2,3,2,1,0
+LoadTexture,divider.bmp
+SetEmissiveColor,255,255,255

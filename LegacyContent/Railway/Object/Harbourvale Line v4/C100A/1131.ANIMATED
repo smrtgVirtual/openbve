@@ -1,0 +1,204 @@
+;Wheels;
+[Object]
+States = wheels.csv
+Position = 0.744,0.655,-10.95
+
+[Object]
+States = wheels.csv
+Position = -0.744,0.655,-10.95
+
+[Object]
+States = wheels.csv
+Position = 0.744,0.655,-9.55
+
+[Object]
+States = wheels.csv
+Position = -0.744,0.655,-9.55
+
+
+[Object]
+States = wheels.csv
+Position = 0.744,0.655,6.05
+
+[Object]
+States = wheels.csv
+Position = -0.744,0.655,6.05
+
+[Object]
+States = wheels.csv
+Position = 0.744,0.655,7.55
+
+[Object]
+States = wheels.csv
+Position = -0.744,0.655,7.55
+
+[Object]
+States = 1131.csv
+Position = 0,0,-12.95
+
+;Interior Walls;
+[Object]
+States = intwall3.csv
+Position = 0.008,0,-11.75
+
+[Object]
+States = intwall.csv
+Position = 0.008,0,-6.38
+
+[Object]
+States = intwall.csv
+Position = 0.008,0,-1.02
+
+
+[Object]
+States = intwall.csv
+Position = 0.008,0,4.35
+
+[Object]
+States = intwall4.csv
+Position = 0.008,0,9.72
+
+;Door 1;
+
+[Object]
+States = drsl_left.csv
+Position = 0.008,0,-9.06
+
+[Object]
+States = drsl_right.csv
+Position = 0.008,0,-9.06
+
+[Object]
+States = doorbottom_left.csv
+Position = 0,0,-9.06
+
+[Object]
+States = drsr_left.csv
+Position = -0.008,0,-9.06
+
+[Object]
+States = drsr_right.csv
+Position = -0.008,0,-9.06
+
+[Object]
+States = doorbottom_right.csv
+Position = 0,0,-9.06
+
+;Door 2;
+
+[Object]
+States = drsl_left.csv
+Position = 0.008,0,-3.73
+
+[Object]
+States = drsl_right.csv
+Position = 0.008,0,-3.73
+
+[Object]
+States = doorbottom_left.csv
+Position = 0,0,-3.73
+
+[Object]
+States = drsr_left.csv
+Position = -0.008,0,-3.73
+
+[Object]
+States = drsr_right.csv
+Position = -0.008,0,-3.73
+
+[Object]
+States = doorbottom_right.csv
+Position = 0,0,-3.73
+
+;Door 3;
+
+[Object]
+States = drsl_left.csv
+Position = 0.008,0,1.66
+
+[Object]
+States = drsl_right.csv
+Position = 0.008,0,1.66
+
+[Object]
+States = doorbottom_left.csv
+Position = 0,0,1.66
+
+[Object]
+States = drsr_left.csv
+Position = -0.008,0,1.66
+
+[Object]
+States = drsr_right.csv
+Position = -0.008,0,1.66
+
+[Object]
+States = doorbottom_right.csv
+Position = 0,0,1.66
+
+;Door 4;
+
+[Object]
+States = drsl_left.csv
+Position = 0.008,0,7.03
+
+[Object]
+States = drsl_right.csv
+Position = 0.008,0,7.03
+
+[Object]
+States = doorbottom_left.csv
+Position = 0,0,7.03
+
+[Object]
+States = drsr_left.csv
+Position = -0.008,0,7.03
+
+[Object]
+States = drsr_right.csv
+Position = -0.008,0,7.03
+
+[Object]
+States = doorbottom_right.csv
+Position = 0,0,7.03
+
+;Seats;
+[Object]
+States = blue/short_1.csv
+Position = 0,0.65,8.31
+
+[Object]
+States = blue/long.csv
+Position = 0,0.65,3
+
+[Object]
+States = blue/long.csv
+Position = 0,0.65,-2.4
+
+[Object]
+States = blue/long.csv
+Position = 0,0.65,-7.8
+
+[Object]
+States = blue/short_3.csv
+Position = 0,0.65,-12.76
+
+[Object]
+States = blue/short_2.csv
+Position = 0,0.65,8.31
+
+[Object]
+States = blue/long_left.csv
+Position = 0,0.65,3
+
+[Object]
+States = blue/long_left.csv
+Position = 0,0.65,-2.4
+
+[Object]
+States = blue/long_left.csv
+Position = 0,0.65,-7.8
+
+[Object]
+States = blue/short_4.csv
+Position = 0,0.65,-12.76

@@ -1,0 +1,12 @@
+﻿[Object]
+States = semaphore_static.csv
+
+[Object]
+States = semaphore_arm.csv
+RotateZFunction = (section != 0) * 0.663225115757845
+RotateZDamping = 10, 0.5
+
+[Object]
+States = semaphore_light_r.csv, semaphore_light_g.csv
+StateFunction = section != 0
+RefreshRate = 0.5

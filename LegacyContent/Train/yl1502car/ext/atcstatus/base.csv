@@ -1,0 +1,12 @@
+CreateMeshBuilder,
+AddVertex,1.2,1.93,23.995
+AddVertex,1.4,1.93,23.995
+AddVertex,1.4,1.89,23.995
+AddVertex,1.2,1.89,23.995
+AddFace2,0,1,2,3
+LoadTexture,status.bmp
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,0.25
+SetTextureCoordinates,3,0,0.25
+SetEmissiveColor,255,255,255

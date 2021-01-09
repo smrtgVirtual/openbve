@@ -1,0 +1,19 @@
+;author=Rainer Hübner,Uwe Post
+;description=Stop sign DB NE5
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -0.4, 2.7, -0.5
+Vertex  0.2, 2.7, -0.5
+Vertex  0.2, 2, -0.5
+Vertex -0.4, 2, -0.5
+Face 0, 1, 2, 3
+
+[Texture]
+Load End.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 0, 0, 255
+

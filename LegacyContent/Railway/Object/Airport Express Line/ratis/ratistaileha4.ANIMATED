@@ -1,0 +1,13 @@
+[Include]
+eha4.ANIMATED
+;this is the blinking green white green white ratis
+ratis.csv
+Position = 2.7, 3.9, 0
+
+[Object]
+Position = 2.7, 3.9, 0
+States = ehaarr4.csv, empty.csv, ehaarr1.csv
+StateFunction = If[trackdistance>-130,if[trackdistance>10,if[trackdistance<-10,1,2],1],0]
+;the left ehaarr1.csv is the image that will be shown after the train departs
+;the empty.csv is so that the eha1.ANIMATED will show
+;the right ehaarr1.csv is the image that shows when the train is arriving

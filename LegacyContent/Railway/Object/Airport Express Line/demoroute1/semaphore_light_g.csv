@@ -1,0 +1,13 @@
+﻿CreateMeshBuilder
+AddVertex, 0.30, -0.13, -0.11
+AddVertex, 0.56, -0.13, -0.11
+AddVertex, 0.56, 0.13, -0.11
+AddVertex, 0.30, 0.13, -0.11
+AddFace, 3, 2, 1, 0
+LoadTexture, semaphore_light.png
+SetTextureCoordinates, 0, 0, 0
+SetTextureCoordinates, 1, 1, 0
+SetTextureCoordinates, 2, 1, 1
+SetTextureCoordinates, 3, 0, 1
+SetEmissiveColor, 0, 255, 255
+SetBlendMode, Additive

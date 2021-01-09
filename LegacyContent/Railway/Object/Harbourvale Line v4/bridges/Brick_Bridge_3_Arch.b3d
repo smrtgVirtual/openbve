@@ -1,0 +1,242 @@
+;3-Arch Brick Bridge, Gloucestershire & Warwickshire Line
+;Object created by Alan Wheeler, aka Guillyman, email guillyman@eezypeazy.co.uk
+;Original photograph by Rich Boddy, aka Surfsup
+;Hosted by eezypeazy, email eezypeazy@eezypeazy.co.uk
+;Copyright eezypeazy, Alan Wheeler and Rich Boddy 2009. All rights reserved.
+;You may publish this object without alteration in your BVE routes providing that you acknowledge this copyright.
+
+;________Front & Rear Faces_______
+
+[MeshBuilder]
+Vertex -16,6.75,0
+Vertex 18.2,6.75,0
+Vertex -16,-0.3,0
+Vertex 18.2,-0.3,0
+Vertex 18.2,6.75,8
+Vertex -16,6.75,8
+Vertex 18.2,-0.3,8
+Vertex -16,-0.3,8
+Face2 0,1,3,2
+Face2 4,5,7,6
+[Texture]
+Load Brick_Bridge_3_Arch_Front.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Coordinates 4,1,0
+Coordinates 5,0,0
+Coordinates 6,1,1
+Coordinates 7,0,1
+Transparent 0,0,255
+
+;________Beneath Arches___________
+
+[MeshBuilder]
+Vertex -11.38,-0.3,8.02
+Vertex -11.38,-0.3,-0.02
+Vertex -11.38,2.76,8.02
+Vertex -11.38,2.76,-0.02
+Vertex -10.065,3.75,8.02
+Vertex -10.065,3.75,-0.02
+Vertex -8.75,4.16,8.02
+Vertex -8.75,4.16,-0.02
+Vertex -7.435,4.36,8.02
+Vertex -7.435,4.36,-0.02
+Vertex -6.12,4.18,8.02
+Vertex -6.12,4.18,-0.02
+Vertex -4.805,3.73,8.02
+Vertex -4.805,3.73,-0.02
+Vertex -3.49,2.75,8.02
+Vertex -3.49,2.75,-0.02
+Vertex -3.49,-0.3,8.02
+Vertex -3.49,-0.3,-0.02
+Vertex -2.42,-0.3,8.02
+Vertex -2.42,-0.3,-0.02
+Vertex -2.42,2.76,8.02
+Vertex -2.42,2.76,-0.02
+Vertex -1.178,3.75,8.02
+Vertex -1.178,3.75,-0.02
+Vertex -0.064,4.22,8.02
+Vertex -0.064,4.22,-0.02
+Vertex 1.306,4.42,8.02
+Vertex 1.306,4.42,-0.02
+Vertex 2.548,4.24,8.02
+Vertex 2.548,4.24,-0.02
+Vertex 3.79,3.77,8.02
+Vertex 3.79,3.77,-0.02
+Vertex 5.03,2.75,8.02
+Vertex 5.03,2.75,-0.02
+Vertex 5.03,-0.3,8.02
+Vertex 5.03,-0.3,-0.02
+Vertex 6.09,-0.3,8.02
+Vertex 6.09,-0.3,-0.02
+Vertex 6.09,2.76,8.02
+Vertex 6.09,2.76,-0.02
+Vertex 7.31,3.75,8.02
+Vertex 7.31,3.75,-0.02
+Vertex 8.53,4.24,8.02
+Vertex 8.53,4.24,-0.02
+Vertex 9.75,4.42,8.02
+Vertex 9.75,4.42,-0.02
+Vertex 10.97,4.28,8.02
+Vertex 10.97,4.28,-0.02
+Vertex 12.19,3.81,8.02
+Vertex 12.19,3.81,-0.02
+Vertex 13.41,2.82,8.02
+Vertex 13.41,2.82,-0.02
+Vertex 13.41,-0.3,8.02
+Vertex 13.41,-0.3,-0.02
+Vertex -16,4.2,8.02
+Vertex -16,4.2,-0.02
+Vertex -14.82,4.05,8.02
+Vertex -14.82,4.05,-0.02
+Vertex -13.63,3.57,8.02
+Vertex -13.63,3.57,-0.02
+Vertex -12.45,2.7,8.02
+Vertex -12.45,2.7,-0.02
+Vertex -12.45,-0.3,8.02
+Vertex -12.45,-0.3,-0.02
+Vertex 14.5,-0.3,8.02
+Vertex 14.5,-0.3,-0.02
+Vertex 14.5,2.7,8.02
+Vertex 14.5,2.7,-0.02
+Vertex 15.73,3.57,8.02
+Vertex 15.73,3.57,-0.02
+Vertex 16.97,4.05,8.02
+Vertex 16.97,4.05,-0.02
+Vertex 18.2,4.2,8.02
+Vertex 18.2,4.2,-0.02
+Face 0,1,3,2
+Face 2,3,5,4
+Face 4,5,7,6
+Face 6,7,9,8
+Face 8,9,11,10
+Face 10,11,13,12
+Face 12,13,15,14
+Face 14,15,17,16
+Face 18,19,21,20
+Face 20,21,23,22
+Face 22,23,25,24
+Face 24,25,27,26
+Face 26,27,29,28
+Face 28,29,31,30
+Face 30,31,33,32
+Face 32,33,35,34
+Face 36,37,39,38
+Face 38,39,41,40
+Face 40,41,43,42
+Face 42,43,45,44
+Face 44,45,47,46
+Face 46,47,49,48
+Face 48,49,51,50
+Face 50,51,53,52
+Face 54,55,57,56
+Face 56,57,59,58
+Face 58,59,61,60
+Face 60,61,63,62
+Face 64,65,67,66
+Face 66,67,69,68
+Face 68,69,71,70
+Face 70,71,73,72
+[Texture]
+Load Brick_Bridge_3_Arch_Brick.bmp
+Coordinates 0,0,1
+Coordinates 1,2,1
+Coordinates 2,0,0
+Coordinates 3,2,0
+Coordinates 4,0,1
+Coordinates 5,2,1
+Coordinates 6,0,0
+Coordinates 7,2,0
+Coordinates 8,0,1
+Coordinates 9,2,1
+Coordinates 10,0,0
+Coordinates 11,2,0
+Coordinates 12,0,1
+Coordinates 13,2,1
+Coordinates 14,0,0
+Coordinates 15,2,0
+Coordinates 16,0,1
+Coordinates 17,2,1
+Coordinates 18,0,1
+Coordinates 19,2,1
+Coordinates 20,0,0
+Coordinates 21,2,0
+Coordinates 22,0,1
+Coordinates 23,2,1
+Coordinates 24,0,0
+Coordinates 25,2,0
+Coordinates 26,0,1
+Coordinates 27,2,1
+Coordinates 28,0,0
+Coordinates 29,2,0
+Coordinates 30,0,1
+Coordinates 31,2,1
+Coordinates 32,0,0
+Coordinates 33,2,0
+Coordinates 34,0,1
+Coordinates 35,2,1
+Coordinates 36,0,1
+Coordinates 37,2,1
+Coordinates 38,0,0
+Coordinates 39,2,0
+Coordinates 40,0,1
+Coordinates 41,2,1
+Coordinates 42,0,0
+Coordinates 43,2,0
+Coordinates 44,0,1
+Coordinates 45,2,1
+Coordinates 46,0,0
+Coordinates 47,2,0
+Coordinates 48,0,1
+Coordinates 49,2,1
+Coordinates 50,0,0
+Coordinates 51,2,0
+Coordinates 52,0,1
+Coordinates 53,2,1
+Coordinates 54,0,1
+Coordinates 55,2,1
+Coordinates 56,0,0
+Coordinates 57,2,0
+Coordinates 58,0,1
+Coordinates 59,2,1
+Coordinates 60,0,0
+Coordinates 61,2,0
+Coordinates 62,0,1
+Coordinates 63,2,1
+Coordinates 64,0,1
+Coordinates 65,2,1
+Coordinates 66,0,0
+Coordinates 67,2,0
+Coordinates 68,0,1
+Coordinates 69,2,1
+Coordinates 70,0,0
+Coordinates 71,2,0
+Coordinates 72,0,1
+Coordinates 73,2,1
+
+;________Road Surface_____________
+
+[MeshBuilder]
+Vertex -16,5.1,8
+Vertex 18.2,5.1,8
+Vertex -16,5.1,0
+Vertex 18.2,5.1,0
+Face 0,1,3,2
+[Texture]
+;Load Tarmac Street2.bmp
+Coordinates 0,0,0
+Coordinates 1,8,0
+Coordinates 2,0,1
+Coordinates 3,8,1
+
+;________Shadow___________________
+
+[meshbuilder]
+Vertex -16,-0.15,8.2
+Vertex 18.2,-0.15,8.2
+Vertex -16,-0.15,-0.2
+Vertex 18.2,-0.15,-0.2
+Face 0,1,3,2
+Color 6,6,6,188

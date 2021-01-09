@@ -1,0 +1,10 @@
+[Object]
+States = nxt_ktb.csv, nxt_ktbB.csv
+StateFunction = if[destination==2012,value==0,-1]
+refreshrate = 0.8
+
+[Object]
+States = nxt_ktb_left.csv, nxt_ktb_leftB.csv
+StateFunction = if[destination==2012,value==0,-1]
+refreshrate = 0.8
+Position = 0,0,6.53

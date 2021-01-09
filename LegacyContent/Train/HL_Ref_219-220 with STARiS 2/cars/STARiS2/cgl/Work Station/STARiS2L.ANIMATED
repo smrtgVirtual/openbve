@@ -1,0 +1,32 @@
+[Object]
+States = starislt1.csv, starislt2.csv, starislt3.csv, starislt4.csv, starislt5.csv, starislt6.csv, starislt7.csv, starislt6.csv, starislt7.csv, starislt6.csv
+StateFunction = if[klaxon == 2, mod[value + 1, 21],-1]
+refreshrate = 1.00
+Position = 0.001,0,0
+
+;CG2;
+[Object]
+States = cg2lt.csv
+StateFunction = if[destination==1700,0,-1]
+
+;CG1 Next;
+[Object]
+States = cg1nxtlt.csv, cg1nxtltb.csv
+StateFunction = if[destination==1701,value==0,-1]
+refreshrate = 0.8
+
+;CG1;
+[Object]
+States = cg1lt.csv
+StateFunction = if[destination==1702,0,-1]
+
+;CG Next;
+[Object]
+States = cgnxtlt.csv, cgnxtltb.csv
+StateFunction = if[destination==1703,value==0,-1]
+refreshrate = 0.8
+
+;CG;
+[Object]
+States = cglt.csv
+StateFunction = if[destination==1704,0,-1]

@@ -1,0 +1,9 @@
+[Object]
+States = cch_left.csv, cch_leftB.csv
+StateFunction = if[destination==2108,value==0,-1]
+refreshrate = 0.8
+Position = 0,0,6.53
+
+[Object]
+States = cch.csv
+StateFunction = if[destination==2108,0,-1]

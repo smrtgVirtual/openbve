@@ -1,0 +1,25 @@
+﻿[MeshBuilder]
+Vertex -200, 6.2, 7
+Vertex -200, 8.2, 7
+Vertex 200, 8.2, 7
+Vertex 200, 6.2, 7
+Face2 0, 1, 2, 3
+Load cars.png
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 12, 0
+Coordinates 3, 12, 1
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex -200, 6.2, 18
+Vertex -200, 8.2, 18
+Vertex 200, 8.2, 18
+Vertex 200, 6.2, 18
+Face2 0, 1, 2, 3
+Load cars.png
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, -12, 0
+Coordinates 3, -12, 1
+Transparent 0, 0, 255

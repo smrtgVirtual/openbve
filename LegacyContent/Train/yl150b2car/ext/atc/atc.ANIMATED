@@ -1,0 +1,18 @@
+[Object]
+States = base.csv
+
+[Object]
+States = digit.csv
+TextureShiftXFunction = abs[0.1*(Round[(pluginState[16]/1000)])]
+
+[Object]
+States = digit.csv
+TextureShiftXFunction = 0
+Position = -0.06666666666667,0,0
+TextureShiftXFunction = if[pluginState[16]>0,0.1*Floor[(0.1*(Floor[Round[(pluginState[16]/1000)]]))],-(0.1*Ceiling[(0.1*(Ceiling[Round[(pluginState[16]/1000)]]))])]
+
+[Object]
+States = digit.csv
+TextureShiftXFunction = 0
+Position = -0.13333333333333,0,0
+TextureShiftXFunction = if[pluginState[16]>0,0.1*Floor[0.1*Floor[(0.1*(Floor[Round[(pluginState[16]/1000)]]))]],-(0.1*Ceiling[0.1*Ceiling[(0.1*(Ceiling[Round[(pluginState[16]/1000)]]))]])]

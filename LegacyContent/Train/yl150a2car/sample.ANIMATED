@@ -1,0 +1,109 @@
+;Main Shell;
+[Object]
+States = ext.csv
+
+[Object]
+States = info/display.animated
+StateFunction = pluginstate[102]
+
+;Door Pair 1;
+[Object]
+States = door1.csv
+Position = 0,0,6.01
+
+[Object]
+States = door2.csv
+Position = 0,0,6.01
+
+[Object]
+States = door3.csv
+Position = 0,0,6.01
+
+[Object]
+States = door4.csv
+Position = 0,0,6.01
+
+;Door Pair 2;
+[Object]
+States = door1.csv
+Position = 0,0,12.245
+
+[Object]
+States = door2.csv
+Position = 0,0,12.245
+
+[Object]
+States = door3.csv
+Position = 0,0,12.245
+
+[Object]
+States = door4.csv
+Position = 0,0,12.245
+
+;Door Pair 3;
+[Object]
+States = door1.csv
+Position = 0,0,18.99
+
+[Object]
+States = door2.csv
+Position = 0,0,18.99
+
+[Object]
+States = door3.csv
+Position = 0,0,18.99
+
+[Object]
+States = door4.csv
+Position = 0,0,18.99
+
+;Divider;
+[Object]
+States = clear.csv,opaque.csv
+Position = 0,0,3.5
+
+[Object]
+States = clear.csv,opaque.csv
+Position = 0,0,22
+
+;Bogie 1;
+[Object]
+States = wheel_l.csv
+Position = -0.685,0.35,3
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_r.csv
+Position = 0.685,0.35,3
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_l.csv
+Position = -0.685,0.35,5
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_r.csv
+Position = 0.685,0.35,5
+RotateXFunction = value + delta * speedometer / 0.35
+
+;Bogie 2;
+[Object]
+States = wheel_l.csv
+Position = -0.685,0.35,20
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_r.csv
+Position = 0.685,0.35,20
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_l.csv
+Position = -0.685,0.35,22
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_r.csv
+Position = 0.685,0.35,22
+RotateXFunction = value + delta * speedometer / 0.35

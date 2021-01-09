@@ -1,0 +1,9 @@
+[Object]
+States = btp.csv, btpB.csv
+StateFunction = if[destination==2112,value==0,-1]
+refreshrate = 0.8
+
+[Object]
+States = btp_left.csv
+StateFunction = if[destination==2112,0,-1]
+Position = 0,0,6.53

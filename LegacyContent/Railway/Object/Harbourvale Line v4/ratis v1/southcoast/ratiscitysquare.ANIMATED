@@ -1,0 +1,5 @@
+[Include]
+citysquare.ANIMATED
+;this is the blinking green white green white ratis
+ratis.csv
+Position = 2.7, 3.9, 0

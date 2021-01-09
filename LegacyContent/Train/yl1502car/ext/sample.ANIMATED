@@ -1,0 +1,238 @@
+;Main Shell;
+[Object]
+States = ext.csv
+
+;Info;
+;Info System;
+[Include]
+info/display.ANIMATED
+Position = 0,0,9.13
+
+;CM Light;
+[Object]
+States = cm_off.csv,cm_on.csv
+StateFunction = if[pluginState[32] != 2,pluginState[32],value == 0]
+RefreshRate = 0.5
+Position = 0.02,3.45,23.94
+
+[Object]
+States = cm_rev.csv
+Position = 0.02,3.45,1.03
+
+;Reverser Control;
+[Object]
+States = handle/handle.csv
+Position = 1.37,1.85,23.72
+TranslateZFunction = reverserNotch * 0.1
+
+[Object]
+States = handle/handle.csv
+Position = -1.37,1.85,1.28
+
+;Power Control;
+[Object]
+States = handle/handle.csv
+Position = 1.61,1.85,23.725
+TranslateZFunction = if[brakenotchLinear>0,brakeNotchLinear * minus[0.04],powerNotch * 0.04]
+
+[Object]
+States = handle/handle.csv
+Position = -1.61,1.85,1.275
+
+;ATO;
+[Object]
+States = handle/handle.csv
+Position = 0.797,1.85,23.6
+TranslateZFunction = if[pluginState[15]>0,0.225,0]
+
+[Object]
+States = handle/handle.csv
+Position = -0.797,1.85,1.4
+
+;ATC;
+[Object]
+States = handle/handle.csv
+Position = 1.155,1.85,23.6
+TranslateZFunction = if[pluginState[9]>0,0.225,0]
+
+[Object]
+States = handle/handle.csv
+Position = -1.16,1.85,1.4
+
+;Control;
+[Include]
+speed/speed.ANIMATED
+time/time.ANIMATED
+atc/atc.ANIMATED
+atcstatus/atcstatus.ANIMATED
+atostatus/atostatus.ANIMATED
+doorindicator/door.ANIMATED
+
+;Door Pair 1;
+[Object]
+States = door1b.csv
+Position = 0,0,6.01
+TranslateXFunction = if[leftdoors!=0, if[leftdoorstarget == 1, if[leftdoors>0&leftdoors<=0.06,-0.051*16.6*leftdoors,-0.051] ,if[leftdoors>0&leftdoors<=0.17,-0.051*5.9*leftdoors,-0.051]],0]
+TranslateZFunction = if[leftdoorstarget == 1, if[leftdoors>0.06,sqrt[(leftdoors-0.06)*(0.8765*0.8765)],0] , if[leftdoors>0.17,(((leftdoors-0.17)*sqrt[1.234]))*(((leftdoors-0.17)*sqrt[1.234])),0]]
+
+[Object]
+States = door2.csv
+Position = 0,0,6.01
+TranslateXFunction = if[leftdoors!=0, if[leftdoorstarget == 1, if[leftdoors>0&leftdoors<=0.06,-0.051*16.6*leftdoors,-0.051] ,if[leftdoors>0&leftdoors<=0.17,-0.051*5.9*leftdoors,-0.051]],0]
+TranslateZFunction = minus[if[leftdoorstarget == 1, if[leftdoors>0.06,sqrt[(leftdoors-0.06)*(0.8765*0.8765)],0] , if[leftdoors>0.17,(((leftdoors-0.17)*sqrt[1.234]))*(((leftdoors-0.17)*sqrt[1.234])),0]]]
+
+;Door Closing Indicators;
+
+[Object]
+States = dcindicator/on.csv, dcindicator/off.csv
+Position = -1.47,2.96,6.01
+StateFunction = if[(Klaxon==2 | Klaxon==3) & leftdoors == 1,value==0,1] & if[leftdoors < 1 & leftdoors > 0 & leftDoorsTarget==0,value==0,1]
+RefreshRate = 0.5
+
+[Object]
+States = dcindicator/on.csv, dcindicator/off.csv
+Position = 1.47,2.96,6.01
+StateFunction = if[(Klaxon==2 | Klaxon==3) & rightdoors ==1,value==0,1] & if[rightdoors < 1 & rightdoors > 0 & rightDoorsTarget==0,value==0,1]
+RefreshRate = 0.5
+
+[Object]
+States = door3b.csv
+Position = 0,0,6.01
+TranslateXFunction = if[rightdoors!=0, if[rightdoorstarget == 1, if[rightdoors>0&rightdoors<=0.06,0.051*16.6*rightdoors,0.051] ,if[rightdoors>0&rightdoors<=0.17,0.051*5.9*rightdoors,0.051]],0]
+TranslateZFunction = if[rightdoorstarget == 1, if[rightdoors>0.06,sqrt[(rightdoors-0.06)*(0.8765*0.8765)],0] , if[rightdoors>0.17,(((rightdoors-0.17)*sqrt[1.234]))*(((rightdoors-0.17)*sqrt[1.234])),0]]
+
+[Object]
+States = door4b.csv
+Position = 0,0,6.01
+TranslateXFunction = if[rightdoors!=0, if[rightdoorstarget == 1, if[rightdoors>0&rightdoors<=0.06,0.051*16.6*rightdoors,0.051] ,if[rightdoors>0&rightdoors<=0.17,0.051*5.9*rightdoors,0.051]],0]
+TranslateZFunction = minus[if[rightdoorstarget == 1, if[rightdoors>0.06,sqrt[(rightdoors-0.06)*(0.8765*0.8765)],0] , if[rightdoors>0.17,(((rightdoors-0.17)*sqrt[1.234]))*(((rightdoors-0.17)*sqrt[1.234])),0]]]
+
+;Door Pair 2;
+[Object]
+States = door1a.csv
+Position = 0,0,12.245
+TranslateXFunction = if[leftdoors!=0, if[leftdoorstarget == 1, if[leftdoors>0&leftdoors<=0.06,-0.051*16.6*leftdoors,-0.051] ,if[leftdoors>0&leftdoors<=0.17,-0.051*5.9*leftdoors,-0.051]],0]
+TranslateZFunction = if[leftdoorstarget == 1, if[leftdoors>0.06,sqrt[(leftdoors-0.06)*(0.8765*0.8765)],0] , if[leftdoors>0.17,(((leftdoors-0.17)*sqrt[1.234]))*(((leftdoors-0.17)*sqrt[1.234])),0]]
+
+[Object]
+States = door2a.csv
+Position = 0,0,12.245
+TranslateXFunction = if[leftdoors!=0, if[leftdoorstarget == 1, if[leftdoors>0&leftdoors<=0.06,-0.051*16.6*leftdoors,-0.051] ,if[leftdoors>0&leftdoors<=0.17,-0.051*5.9*leftdoors,-0.051]],0]
+TranslateZFunction = minus[if[leftdoorstarget == 1, if[leftdoors>0.06,sqrt[(leftdoors-0.06)*(0.8765*0.8765)],0] , if[leftdoors>0.17,(((leftdoors-0.17)*sqrt[1.234]))*(((leftdoors-0.17)*sqrt[1.234])),0]]]
+
+;Door Closing Indicators;
+
+[Object]
+States = dcindicator/on.csv, dcindicator/off.csv
+Position = -1.47,2.96,12.245
+StateFunction = if[(Klaxon==2 | Klaxon==3) & leftdoors == 1,value==0,1] & if[leftdoors < 1 & leftdoors > 0 & leftDoorsTarget==0,value==0,1]
+RefreshRate = 0.5
+
+[Object]
+States = dcindicator/on.csv, dcindicator/off.csv
+Position = 1.47,2.96,12.245
+StateFunction = if[(Klaxon==2 | Klaxon==3) & rightdoors ==1,value==0,1] & if[rightdoors < 1 & rightdoors > 0 & rightDoorsTarget==0,value==0,1]
+RefreshRate = 0.5
+
+[Object]
+States = door3a.csv
+Position = 0,0,12.245
+TranslateXFunction = if[rightdoors!=0, if[rightdoorstarget == 1, if[rightdoors>0&rightdoors<=0.06,0.051*16.6*rightdoors,0.051] ,if[rightdoors>0&rightdoors<=0.17,0.051*5.9*rightdoors,0.051]],0]
+TranslateZFunction = if[rightdoorstarget == 1, if[rightdoors>0.06,sqrt[(rightdoors-0.06)*(0.8765*0.8765)],0] , if[rightdoors>0.17,(((rightdoors-0.17)*sqrt[1.234]))*(((rightdoors-0.17)*sqrt[1.234])),0]]
+
+[Object]
+States = door4a.csv
+Position = 0,0,12.245
+TranslateXFunction = if[rightdoors!=0, if[rightdoorstarget == 1, if[rightdoors>0&rightdoors<=0.06,0.051*16.6*rightdoors,0.051] ,if[rightdoors>0&rightdoors<=0.17,0.051*5.9*rightdoors,0.051]],0]
+TranslateZFunction = minus[if[rightdoorstarget == 1, if[rightdoors>0.06,sqrt[(rightdoors-0.06)*(0.8765*0.8765)],0] , if[rightdoors>0.17,(((rightdoors-0.17)*sqrt[1.234]))*(((rightdoors-0.17)*sqrt[1.234])),0]]]
+
+;Door Pair 3;
+[Object]
+States = door1.csv
+Position = 0,0,18.99
+TranslateXFunction = if[leftdoors!=0, if[leftdoorstarget == 1, if[leftdoors>0&leftdoors<=0.06,-0.051*16.6*leftdoors,-0.051] ,if[leftdoors>0&leftdoors<=0.17,-0.051*5.9*leftdoors,-0.051]],0]
+TranslateZFunction = if[leftdoorstarget == 1, if[leftdoors>0.06,sqrt[(leftdoors-0.06)*(0.8765*0.8765)],0] , if[leftdoors>0.17,(((leftdoors-0.17)*sqrt[1.234]))*(((leftdoors-0.17)*sqrt[1.234])),0]]
+
+[Object]
+States = door2b.csv
+Position = 0,0,18.99
+TranslateXFunction = if[leftdoors!=0, if[leftdoorstarget == 1, if[leftdoors>0&leftdoors<=0.06,-0.051*16.6*leftdoors,-0.051] ,if[leftdoors>0&leftdoors<=0.17,-0.051*5.9*leftdoors,-0.051]],0]
+TranslateZFunction = minus[if[leftdoorstarget == 1, if[leftdoors>0.06,sqrt[(leftdoors-0.06)*(0.8765*0.8765)],0] , if[leftdoors>0.17,(((leftdoors-0.17)*sqrt[1.234]))*(((leftdoors-0.17)*sqrt[1.234])),0]]]
+
+;Door Closing Indicators;
+
+[Object]
+States = dcindicator/on.csv, dcindicator/off.csv
+Position = -1.47,2.96,18.99
+StateFunction = if[(Klaxon==2 | Klaxon==3) & leftdoors == 1,value==0,1] & if[leftdoors < 1 & leftdoors > 0 & leftDoorsTarget==0,value==0,1]
+RefreshRate = 0.5
+
+[Object]
+States = dcindicator/on.csv, dcindicator/off.csv
+Position = 1.47,2.96,18.99
+StateFunction = if[(Klaxon==2 | Klaxon==3) & rightdoors ==1,value==0,1] & if[rightdoors < 1 & rightdoors > 0 & rightDoorsTarget==0,value==0,1]
+RefreshRate = 0.5
+
+[Object]
+States = door3.csv
+Position = 0,0,18.99
+TranslateXFunction = if[rightdoors!=0, if[rightdoorstarget == 1, if[rightdoors>0&rightdoors<=0.06,0.051*16.6*rightdoors,0.051] ,if[rightdoors>0&rightdoors<=0.17,0.051*5.9*rightdoors,0.051]],0]
+TranslateZFunction = if[rightdoorstarget == 1, if[rightdoors>0.06,sqrt[(rightdoors-0.06)*(0.8765*0.8765)],0] , if[rightdoors>0.17,(((rightdoors-0.17)*sqrt[1.234]))*(((rightdoors-0.17)*sqrt[1.234])),0]]
+
+
+[Object]
+States = door4.csv
+Position = 0,0,18.99
+TranslateXFunction = if[rightdoors!=0, if[rightdoorstarget == 1, if[rightdoors>0&rightdoors<=0.06,0.051*16.6*rightdoors,0.051] ,if[rightdoors>0&rightdoors<=0.17,0.051*5.9*rightdoors,0.051]],0]
+TranslateZFunction = minus[if[rightdoorstarget == 1, if[rightdoors>0.06,sqrt[(rightdoors-0.06)*(0.8765*0.8765)],0] , if[rightdoors>0.17,(((rightdoors-0.17)*sqrt[1.234]))*(((rightdoors-0.17)*sqrt[1.234])),0]]]
+
+;Divider;
+[Object]
+States = clear.csv
+Position = 0,0,3.5
+
+[Object]
+States = clear.csv
+Position = 0,0,22
+
+;Bogie 1;
+[Object]
+States = wheel_l.csv
+Position = -0.685,0.35,3
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_r.csv
+Position = 0.685,0.35,3
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_l.csv
+Position = -0.685,0.35,5
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_r.csv
+Position = 0.685,0.35,5
+RotateXFunction = value + delta * speedometer / 0.35
+
+;Bogie 2;
+[Object]
+States = wheel_l.csv
+Position = -0.685,0.35,20
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_r.csv
+Position = 0.685,0.35,20
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_l.csv
+Position = -0.685,0.35,22
+RotateXFunction = value + delta * speedometer / 0.35
+
+[Object]
+States = wheel_r.csv
+Position = 0.685,0.35,22
+RotateXFunction = value + delta * speedometer / 0.35

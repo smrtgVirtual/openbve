@@ -1,0 +1,21 @@
+﻿[MeshBuilder]
+Vertex -0.6, 0, 0
+Vertex 0.6, 0, 0
+Vertex 0.6, 0, 0.8
+Vertex -0.6, 0, 0.8
+Vertex -0.6, 5, 7.2
+Vertex 0.6, 5, 7.2
+Vertex 0.6, 5, 8
+Vertex -0.6, 5, 8
+Face 3, 2, 1, 0
+Face2 4, 5, 2, 3
+Face 7, 6, 5, 4
+Load stairs.png
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, -2
+Coordinates 3, 0, -2
+Coordinates 4, 0, -18
+Coordinates 5, 1, -18
+Coordinates 6, 1, -20
+Coordinates 7, 0, -20

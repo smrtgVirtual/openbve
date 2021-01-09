@@ -1,0 +1,27 @@
+﻿[Object]
+States = crossing_street.b3d
+
+[Object]
+Position = 2.5, 0.5, 0.2
+States = crossing_gate.b3d
+RotateXFunction = (abs[trackdistance] > 150) * (-1.4)
+RotateXDamping = 1, 2
+
+[Object]
+Position = 5, 0, 2
+States = car1.b3d
+RotateZFunction = power[cos[time + 0.7], 8] * 0.1
+
+[Object]
+Position = 9.9, 0, 2
+States = car2.b3d
+TranslateXDirection = -1, 0, 0
+TranslateXFunction = power[1 - abs[cos[time]], 2] * 2
+
+[Object]
+States = crossing_light.b3d
+
+[Object]
+States = crossing_glow.b3d
+StateFunction = if[abs[trackdistance] > 150, 0, value == 0]
+RefreshRate = 0.8

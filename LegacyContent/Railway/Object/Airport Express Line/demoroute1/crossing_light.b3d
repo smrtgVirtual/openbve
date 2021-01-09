@@ -1,0 +1,11 @@
+﻿[MeshBuilder]
+Vertex -3.3, 3.2, -0.55
+Vertex -3.3, 3.8, -0.55
+Vertex -2.7, 3.8, -0.55
+Vertex -2.7, 3.2, -0.55
+Face 0, 1, 2, 3
+Load crossing_light.png
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1

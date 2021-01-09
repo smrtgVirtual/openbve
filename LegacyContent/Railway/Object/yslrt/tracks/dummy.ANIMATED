@@ -1,0 +1,46 @@
+[Include]
+tunnel\tbm_tl0\tbm_l_1.csv
+tunnel\tbm_tl0\tbm_l_2.csv
+straight.b3d
+Position = 0,0,-12
+
+[Include]
+tunnel\tbm_tl0\tbm_l_1.csv
+tunnel\tbm_tl0\tbm_l_2.csv
+straight.b3d
+
+[Include]
+straight.b3d
+tunnel\tbm_tl0\tbm_l_1.csv
+tunnel\tbm_tl0\tbm_l_2.csv
+Position = 0,0,25
+
+[Include]
+r600\1.b3d
+r600\1\tbm_l_1.csv
+r600\1\tbm_l_2.csv
+Position = 0,0,50
+
+[Include]
+r600\2.b3d
+r600\2\tbm_l_1.csv
+r600\2\tbm_l_2.csv
+Position = -0.45,0,75
+
+[Include]
+r600\3.b3d
+r600\3\tbm_l_1.csv
+r600\3\tbm_l_2.csv
+Position = -1.76,0,100
+
+[Include]
+r600\4.b3d
+r600\4\tbm_l_1.csv
+r600\4\tbm_l_2.csv
+Position = -3.95,0,125
+
+[Include]
+r600\5.b3d
+r600\5\tbm_l_1.csv
+r600\5\tbm_l_2.csv
+Position = -7.03,0,150

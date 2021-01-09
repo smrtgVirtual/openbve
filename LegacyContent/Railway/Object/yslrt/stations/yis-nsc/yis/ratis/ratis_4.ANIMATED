@@ -1,0 +1,7 @@
+;Board;
+[Object]
+States = ratis_4.csv
+
+[Object]
+States = disp_4.csv
+TextureShiftYFunction = if[trackDistance > 25, if[trackDistance < 170, (0.07142857*11), if[trackDistance < 340, (0.07142857*10), if[trackDistance < 510, (0.07142857*9), if[trackDistance < 680, (0.07142857*8), if[trackDistance < 850, (0.07142857*7), if[trackDistance < 1020, (0.07142857*6), if[trackDistance < 1190, (0.07142857*5), if[trackDistance < 1360, (0.07142857*4), if[trackDistance < 1530, (0.07142857*3), if[trackDistance < 1700, (0.07142857*2), if[trackDistance < 1870, (0.07142857*1), if[trackDistance < 2040, 0, (0.07142857*13)]]]]]]]]]]]], if[trackDistance > -25, (0.07142857*12), (0.07142857*13)]]

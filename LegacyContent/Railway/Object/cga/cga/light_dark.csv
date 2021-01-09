@@ -1,0 +1,4 @@
+CreateMeshBuilder,
+Cylinder,7,0.1,0.1,0.1
+SetColor,25,25,25
+Rotate,0,1,1,180

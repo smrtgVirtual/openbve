@@ -1,0 +1,189 @@
+[Object]
+States = frame.csv
+Position = 0,3.6,5
+
+[Object]
+States = stations\hl02.csv
+Position = 0,3.6,5
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,15
+
+[Object]
+States = directions\r1_right.csv
+Position = 0,3.6,15
+
+[Object]
+States = platform labels\b_right.csv
+Position = 0,3.6,15
+
+[Object]
+States = stations\hl02_l.csv
+Position = 0,3.6,15
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,25
+
+[Object]
+States = stations\hl02.csv
+Position = 0,3.6,25
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,35
+
+[Object]
+States = directions\r1_right.csv
+Position = 0,3.6,35
+
+[Object]
+States = platform labels\b_right.csv
+Position = 0,3.6,35
+
+[Object]
+States = stations\hl02_l.csv
+Position = 0,3.6,35
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,45
+
+[Object]
+States = stations\hl02.csv
+Position = 0,3.6,45
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,55
+
+[Object]
+States = directions\r1_right.csv
+Position = 0,3.6,55
+
+[Object]
+States = platform labels\b_right.csv
+Position = 0,3.6,55
+
+[Object]
+States = stations\hl02_l.csv
+Position = 0,3.6,55
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,65
+
+[Object]
+States = stations\hl02.csv
+Position = 0,3.6,65
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,75
+
+[Object]
+States = directions\r1_right.csv
+Position = 0,3.6,75
+
+[Object]
+States = platform labels\b_right.csv
+Position = 0,3.6,75
+
+[Object]
+States = stations\hl02_l.csv
+Position = 0,3.6,75
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,85
+
+[Object]
+States = stations\hl02.csv
+Position = 0,3.6,85
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,95
+
+[Object]
+States = directions\r1_right.csv
+Position = 0,3.6,95
+
+[Object]
+States = platform labels\b_right.csv
+Position = 0,3.6,95
+
+[Object]
+States = stations\hl02_l.csv
+Position = 0,3.6,95
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,105
+
+[Object]
+States = stations\hl02.csv
+Position = 0,3.6,105
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,115
+
+[Object]
+States = directions\r1_right.csv
+Position = 0,3.6,115
+
+[Object]
+States = platform labels\b_right.csv
+Position = 0,3.6,115
+
+[Object]
+States = stations\hl02_l.csv
+Position = 0,3.6,115
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,125
+
+[Object]
+States = stations\hl02.csv
+Position = 0,3.6,125
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,135
+
+[Object]
+States = directions\r1_right.csv
+Position = 0,3.6,135
+
+[Object]
+States = platform labels\b_right.csv
+Position = 0,3.6,135
+
+[Object]
+States = stations\hl02_l.csv
+Position = 0,3.6,135
+
+
+[Object]
+States = frame.csv
+Position = 0,3.6,145
+
+[Object]
+States = stations\hl02.csv
+Position = 0,3.6,145

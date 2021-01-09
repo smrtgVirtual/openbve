@@ -1,0 +1,12 @@
+﻿[MeshBuilder]
+Vertex -1.5, 0, -0.1
+Vertex -1.5, 2, -0.1
+Vertex 1.5, 2, -0.1
+Vertex 1.5, 0, -0.1
+Face2 0, 1, 2, 3
+Load cars.png
+Coordinates 0, 0.1, 1
+Coordinates 1, 0.1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+Transparent 0, 0, 255

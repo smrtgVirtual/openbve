@@ -1,0 +1,9 @@
+;Ground;
+
+CreateMeshBuilder,
+AddVertex,-50,0,25,
+AddVertex,-50,0,0,
+AddVertex,50,0,0,
+AddVertex,50,0,25,
+AddFace2,3,2,1,0
+SetColor,100,100,100

@@ -1,0 +1,32 @@
+;Real Travel Information System (RATIS)
+;Coded by boylush for openBVE/TSF Circle Line Singapore
+;LED on
+;Fixed Object
+
+;FRONT;
+CreateMeshBuilder
+AddVertex,0.79,0.0325,-0.021
+AddVertex,0.79,0.05,-0.021
+AddVertex,0.69,0.05,-0.021
+AddVertex,0.69,0.0325,-0.021
+LoadTexture,../texture/RATIS_LED.png, ../texture/RATIS_LED.png
+SetDecalTransparentColor, 0,0,255
+AddFace,3,2,1,0
+SetTextureCoordinates,0,1,0
+SetTextureCoordinates,3,0,0
+SetTextureCoordinates,2,0,1
+SetTextureCoordinates,1,1,1
+
+;REAR;
+CreateMeshBuilder
+AddVertex,-0.79,0.0325,0.621
+AddVertex,-0.79,0.05,0.621
+AddVertex,-0.69,0.05,0.621
+AddVertex,-0.69,0.0325,0.621
+LoadTexture,../texture/RATIS_LED.png,../texture/RATIS_LED.png
+SetDecalTransparentColor, 0,0,255
+AddFace,3,2,1,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,0,0
+SetTextureCoordinates,3,0,1
+SetTextureCoordinates,0,1,1

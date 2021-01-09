@@ -1,0 +1,14 @@
+CreateMeshBuilder,,,,
+AddVertex,2.953,4.03,-0.005,
+AddVertex,2.953,4.1,-0.005,
+AddVertex,3.80,4.1,-0.005,
+AddVertex,3.80,4.03,-0.005,
+AddFace2,0,1,2,3
+LoadTexture,termcts.bmp,,,
+SetTextureCoordinates,0,0,1,
+SetTextureCoordinates,1,0,0,
+SetTextureCoordinates,2,0.18,0,
+SetTextureCoordinates,3,0.18,1,
+,,,,
+TranslateAll,-6.445,-0.005,-0.106,
+RotateAll,0,1,0,180

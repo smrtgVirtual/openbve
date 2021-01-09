@@ -1,0 +1,53 @@
+;Converted from CSV by BVE FILE CONVERTER
+
+;Converted from B3D by BVE FILE CONVERTER
+ 
+
+;author=Sanford Mace
+;description=simple Round Tall building
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Cylinder  12,10,10,64
+;Color 255,255,0
+Translate  0,32,0
+
+[Texture]
+Load   house_mod2.bmp
+
+Coordinates  0,0,0 
+Coordinates  1,0,32
+Coordinates  2,1,0 
+Coordinates  3,1,32 
+Coordinates  4,0,0 
+Coordinates  5,0,32 
+Coordinates  6,1,0 
+Coordinates  7,1,32  
+Coordinates  8,0,0 
+Coordinates  9,0,32  
+Coordinates  10,1,0 
+Coordinates  11,1,32  
+Coordinates  12,0,0 
+Coordinates  13,0,32  
+Coordinates  14,1,0 
+Coordinates  15,1,32  
+Coordinates  16,0,0 
+Coordinates  17,0,32  
+Coordinates  18,1,0 
+Coordinates  19,1,32  
+Coordinates  20,0,0 
+Coordinates  21,0,32  
+Coordinates  22,1,0 
+Coordinates  23,1,32
+
+
+
+; RB Bounding Box for Complex Objects
+; You may remove this section if you are not using RB
+[MeshBuilder]
+Vertex -10 , 0, -10 
+Vertex -10 , 0,  10 
+Vertex  10 , 0,  10 
+Vertex  10 , 0, -10 
+Face 0,1,2,3
+Color 0,0,0,1

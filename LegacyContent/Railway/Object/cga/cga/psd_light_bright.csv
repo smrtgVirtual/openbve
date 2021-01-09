@@ -1,0 +1,4 @@
+CreateMeshBuilder,
+Cube,0.0925,0.125,0.005
+SetColor,0,200,0
+SetEmissiveColor,0,200,0

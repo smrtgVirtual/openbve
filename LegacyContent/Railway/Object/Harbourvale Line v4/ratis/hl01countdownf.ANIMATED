@@ -1,0 +1,223 @@
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd1.csv, empty.csv
+StateFunction = If[time<70080,if[time<70020,if[time>70020,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd2.csv, empty.csv
+StateFunction = If[time<70020,if[time<69960,if[time>69960,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd3.csv, empty.csv
+StateFunction = If[time<69960,if[time<69900,if[time>69900,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd4.csv, empty.csv
+StateFunction = If[time<69900,if[time<69840,if[time>69840,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd5.csv, empty.csv
+StateFunction = If[time<69840,if[time<69780,if[time>69780,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd6.csv, empty.csv
+StateFunction = If[time<69780,if[time<69720,if[time>69720,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd7.csv, empty.csv
+StateFunction = If[time<69720,if[time<69660,if[time>69660,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd8.csv, empty.csv
+StateFunction = If[time<69660,if[time<69600,if[time>69600,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd9.csv, empty.csv
+StateFunction = If[time<69600,if[time<69540,if[time>69540,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd10.csv, empty.csv
+StateFunction = If[time<69540,if[time<69480,if[time>69480,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd11.csv, harbourvale\platformA\bkjd11.csv
+StateFunction = If[time<69480,if[time<69420,if[time>69420,1,2],1],0]
+
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd1.csv, empty.csv
+StateFunction = If[time<69960,if[time<69900,if[time>69900,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd2.csv, empty.csv
+StateFunction = If[time<69900,if[time<69840,if[time>69840,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd3.csv, empty.csv
+StateFunction = If[time<69840,if[time<69780,if[time>69780,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd4.csv, empty.csv
+StateFunction = If[time<69780,if[time<69720,if[time>69720,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd5.csv, empty.csv
+StateFunction = If[time<69720,if[time<69660,if[time>69660,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd6.csv, empty.csv
+StateFunction = If[time<69660,if[time<69600,if[time>69600,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd7.csv, empty.csv
+StateFunction = If[time<69600,if[time<69540,if[time>69540,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd8.csv, empty.csv
+StateFunction = If[time<69540,if[time<69480,if[time>69480,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd9.csv, empty.csv
+StateFunction = If[time<69480,if[time<69420,if[time>69420,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd10.csv, empty.csv
+StateFunction = If[time<69420,if[time<69360,if[time>69360,1,2],1],0]
+
+[Object]
+Position = -3.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd11.csv, harbourvale\platformB\bkjd11.csv
+StateFunction = If[time<69360,if[time<69300,if[time>69300,1,2],1],0]
+
+
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd1.csv, empty.csv
+StateFunction = If[time<70080,if[time<70020,if[time>70020,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd2.csv, empty.csv
+StateFunction = If[time<70020,if[time<69960,if[time>69960,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd3.csv, empty.csv
+StateFunction = If[time<69960,if[time<69900,if[time>69900,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd4.csv, empty.csv
+StateFunction = If[time<69900,if[time<69840,if[time>69840,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd5.csv, empty.csv
+StateFunction = If[time<69840,if[time<69780,if[time>69780,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd6.csv, empty.csv
+StateFunction = If[time<69780,if[time<69720,if[time>69720,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd7.csv, empty.csv
+StateFunction = If[time<69720,if[time<69660,if[time>69660,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd8.csv, empty.csv
+StateFunction = If[time<69660,if[time<69600,if[time>69600,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd9.csv, empty.csv
+StateFunction = If[time<69600,if[time<69540,if[time>69540,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd10.csv, empty.csv
+StateFunction = If[time<69540,if[time<69480,if[time>69480,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformA\bkjd11.csv, harbourvale\platformA\bkjd11.csv
+StateFunction = If[time<69480,if[time<69420,if[time>69420,1,2],1],0]
+
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd1.csv, empty.csv
+StateFunction = If[time<69960,if[time<69900,if[time>69900,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd2.csv, empty.csv
+StateFunction = If[time<69900,if[time<69840,if[time>69840,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd3.csv, empty.csv
+StateFunction = If[time<69840,if[time<69780,if[time>69780,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd4.csv, empty.csv
+StateFunction = If[time<69780,if[time<69720,if[time>69720,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd5.csv, empty.csv
+StateFunction = If[time<69720,if[time<69660,if[time>69660,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd6.csv, empty.csv
+StateFunction = If[time<69660,if[time<69600,if[time>69600,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd7.csv, empty.csv
+StateFunction = If[time<69600,if[time<69540,if[time>69540,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd8.csv, empty.csv
+StateFunction = If[time<69540,if[time<69480,if[time>69480,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd9.csv, empty.csv
+StateFunction = If[time<69480,if[time<69420,if[time>69420,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd10.csv, empty.csv
+StateFunction = If[time<69420,if[time<69360,if[time>69360,1,2],1],0]
+
+[Object]
+Position = -8.5, 3.8, 0
+States = empty.csv, harbourvale\platformB\bkjd11.csv, harbourvale\platformB\bkjd11.csv
+StateFunction = If[time<69360,if[time<69300,if[time>69300,1,2],1],0]

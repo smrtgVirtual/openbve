@@ -1,0 +1,14 @@
+[MESHBUILDER]
+Vertex  -4, 0, 3
+Vertex -4, 2, 3
+Vertex -3, 2, 3
+Vertex -3, 0, 3
+Face 0, 1, 2, 3
+
+[TEXTURE]
+Load Photog1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+Transparent 0, 0, 255

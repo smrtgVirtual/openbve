@@ -1,0 +1,11 @@
+﻿CreateMeshBuilder
+AddVertex, 0.6, 0.2, -0.1
+AddVertex, -1.4, 0.2, -0.1
+AddVertex, -1.4, -0.4, -0.1
+AddVertex, 0.6, -0.4, -0.1
+AddFace2, 3, 2, 1, 0
+LoadTexture, semaphore.png
+SetTextureCoordinates, 0, 1, 0
+SetTextureCoordinates, 1, 0, 0
+SetTextureCoordinates, 2, 0, 1
+SetTextureCoordinates, 3, 1, 1

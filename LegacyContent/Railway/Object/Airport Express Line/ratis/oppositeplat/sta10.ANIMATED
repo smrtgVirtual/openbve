@@ -1,0 +1,9 @@
+[Include]
+ratis.csv
+Position = 2.7, 3.9, 0.001
+
+[Object]
+States = sta10.csv, staarr.csv
+StateFunction = value == 0
+RefreshRate = 1
+Position = 2.7,3.9,0.001

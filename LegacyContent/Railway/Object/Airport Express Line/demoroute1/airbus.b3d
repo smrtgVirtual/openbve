@@ -1,0 +1,12 @@
+﻿[MeshBuilder]
+Vertex -20, -10, 0
+Vertex -20, 10, 0
+Vertex 20, 10, 0
+Vertex 20, -10, 0
+Face 0, 1, 2, 3
+Load airbus.png
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+Transparent 0, 0, 255

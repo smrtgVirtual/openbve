@@ -1,0 +1,24 @@
+[Object]
+Position = 0, 0, 0.0005
+States = empty.csv, stadep1.csv, empty.csv
+StateFunction = If[time<51095,if[time<51035,if[time>51035,1,2],1],0]
+
+[Object]
+Position = 0, 0, 0.0005
+States = empty.csv, stadep2.csv, empty.csv
+StateFunction = If[time<51035,if[time<50975,if[time>50975,1,2],1],0]
+
+[Object]
+Position = 0, 0, 0.0005
+States = empty.csv, stadep3.csv, empty.csv
+StateFunction = If[time<50975,if[time<50915,if[time>50915,1,2],1],0]
+
+[Object]
+Position = 0, 0, 0.0005
+States = empty.csv, stadep4.csv, empty.csv
+StateFunction = If[time<50915,if[time<50855,if[time>50855,1,2],1],0]
+
+[Object]
+Position = 0, 0, 0.0005
+States = empty.csv, stadep5.csv, stadep5.csv
+StateFunction = If[time<50855,if[time<50795,if[time>50795,1,2],1],0]

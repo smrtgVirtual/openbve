@@ -1,0 +1,12 @@
+[Include]
+sta.ANIMATED
+;this is the blinking green white green white ratis
+ratis.csv
+Position = 2.7, 3.9, 0
+
+[Object]
+Position = 2.7, 3.9, 0
+States = empty.csv, staaarr1.csv
+StateFunction = If[trackdistance>17.5,if[trackdistance<-17.5,1,1],0]
+;the empty.csv is so that the sta.ANIMATED will show
+;the right staarr1.csv is the image that shows when the train is arriving

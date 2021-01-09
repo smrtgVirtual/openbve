@@ -1,0 +1,8 @@
+﻿[Object]
+Position = 0, -5, 0
+States = signal_post.csv
+
+[Object]
+States = signal_RYbG_0.csv, signal_RYbG_2.csv, signal_RYbG_x.csv, signal_RYbG_4.csv
+StateFunction = if[section <= 0, 0, if[section <= 2, if[value == 2, 1, 2], 3]]
+RefreshRate = 0.8

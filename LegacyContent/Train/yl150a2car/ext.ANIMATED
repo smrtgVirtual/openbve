@@ -1,0 +1,117 @@
+;Main Shell;
+[Object]
+States = ext/ext.csv
+
+;Reverser Control;
+[Object]
+States = ext/handle/handle.csv
+Position = 1.37,1.85,23.72
+TranslateZFunction = reverserNotch * 0.1
+
+;Power Control;
+[Object]
+States = ext/handle/handle.csv
+Position = 1.61,1.85,23.725
+TranslateZFunction = if[brakenotchLinear>0,brakeNotchLinear * minus[0.04],powerNotch * 0.04]
+
+;Control;
+[Include]
+ext/speed/speed.ANIMATED
+ext/time/time.ANIMATED
+ext/atc/atc.ANIMATED
+ext/atcstatus/atcstatus.ANIMATED
+ext/atostatus/atostatus.ANIMATED
+
+;Door Pair 1;
+[Object]
+States = ext/door1.csv
+Position = 0,0,6.01
+
+[Object]
+States = ext/door2.csv
+Position = 0,0,6.01
+
+[Object]
+States = ext/door3.csv
+Position = 0,0,6.01
+
+[Object]
+States = ext/door4.csv
+Position = 0,0,6.01
+
+;Door Pair 2;
+[Object]
+States = ext/door1.csv
+Position = 0,0,12.245
+
+[Object]
+States = ext/door2.csv
+Position = 0,0,12.245
+
+[Object]
+States = ext/door3.csv
+Position = 0,0,12.245
+
+[Object]
+States = ext/door4.csv
+Position = 0,0,12.245
+
+;Door Pair 3;
+[Object]
+States = ext/door1.csv
+Position = 0,0,18.99
+
+[Object]
+States = ext/door2.csv
+Position = 0,0,18.99
+
+[Object]
+States = ext/door3.csv
+Position = 0,0,18.99
+
+[Object]
+States = ext/door4.csv
+Position = 0,0,18.99
+
+;Divider;
+[Object]
+States = ext/clear.csv,ext/opaque.csv
+Position = 0,0,3.5
+
+[Object]
+States = ext/clear.csv,ext/opaque.csv
+Position = 0,0,22
+
+;Bogie 1;
+[Object]
+States = ext/wheel_l.csv
+Position = -0.685,0.35,3
+
+[Object]
+States = ext/wheel_r.csv
+Position = 0.685,0.35,3
+
+[Object]
+States = ext/wheel_l.csv
+Position = -0.685,0.35,5
+
+[Object]
+States = ext/wheel_r.csv
+Position = 0.685,0.35,5
+
+;Bogie 2;
+[Object]
+States = ext/wheel_l.csv
+Position = -0.685,0.35,20
+
+[Object]
+States = ext/wheel_r.csv
+Position = 0.685,0.35,20
+
+[Object]
+States = ext/wheel_l.csv
+Position = -0.685,0.35,22
+
+[Object]
+States = ext/wheel_r.csv
+Position = 0.685,0.35,22

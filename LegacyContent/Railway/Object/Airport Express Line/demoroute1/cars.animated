@@ -1,0 +1,7 @@
+﻿[Object]
+States = cars1.b3d
+TextureShiftXFunction = -0.2793 * time
+
+[Object]
+States = cars2.b3d
+TextureShiftXFunction = -0.3851 * time

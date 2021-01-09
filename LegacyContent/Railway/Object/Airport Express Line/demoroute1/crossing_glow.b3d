@@ -1,0 +1,15 @@
+﻿[MeshBuilder]
+Vertex -0.15, -0.15, -0.56
+Vertex -0.15, 0.15, -0.56
+Vertex 0.15, 0.15, -0.56
+Vertex 0.15, -0.15, -0.56
+Translate -3, 3.51, 0
+Face 0, 1, 2, 3
+Load crossing_glow.png
+EmissiveColor 255, 255, 224
+Color 0, 0, 0
+BlendMode Additive
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1

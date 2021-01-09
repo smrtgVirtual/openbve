@@ -1,0 +1,23 @@
+[Object]
+States = stnend2.csv
+Position = -17,0,25
+
+[Include]
+esc1.ANIMATED
+Position = -8,1,25
+
+[Object]
+States = map1.csv
+Position = 12.7,1.5,25.05
+
+[Object]
+States = map1.csv
+Position = -5.6,1.5,25.05
+
+[Object]
+States = stnend4.csv
+Position = 7,0,25
+
+[Include]
+esc1.ANIMATED
+Position = 16,1,25

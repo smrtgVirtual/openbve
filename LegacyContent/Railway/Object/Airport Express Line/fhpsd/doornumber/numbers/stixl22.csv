@@ -1,0 +1,16 @@
+;Desto;
+CreateMeshBuilder,
+AddVertex,-0.099,2.005,-1.615
+AddVertex,-0.101,2.06,-1.615
+AddVertex,-0.101,2.06,-1.675
+AddVertex,-0.099,2.005,-1.675
+AddFace2,1,2,3,0
+LoadTexture,stix22.png
+SetTextureCoordinates,0,0,1
+SetTextureCoordinates,1,0,0
+SetTextureCoordinates,2,1,0
+SetTextureCoordinates,3,1,1
+SetDecalTransparentColor,0,0,255
+SetEmissiveColor,168,168,168
+
+TranslateAll,0,0,0.9

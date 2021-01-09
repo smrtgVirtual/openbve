@@ -1,0 +1,16 @@
+CreateMeshBuilder,
+Cube, 0.4,0.5,0.025
+SETColor, 75,75,75
+
+CreateMeshBuilder,
+AddVertex,-0.35,-0.45,-0.026
+AddVertex,0.35,-0.45,-0.026
+AddVertex,0.35,0.45,-0.026
+AddVertex,-0.35,0.45,-0.026
+AddFace,3,2,1,0
+SetColor,150,150,150
+LoadTexture,notice.bmp
+SetTextureCoordinates,0,0,1
+SetTextureCoordinates,1,1,1
+SetTextureCoordinates,2,1,0
+SetTextureCoordinates,3,0,0

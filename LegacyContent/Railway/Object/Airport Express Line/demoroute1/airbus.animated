@@ -1,0 +1,4 @@
+﻿[Object]
+States = Airbus.b3d
+TranslateXDirection = 1, 0.05, 0
+TranslateXFunction = (mod[time, 120] - 60) * 250

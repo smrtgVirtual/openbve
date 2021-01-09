@@ -1,0 +1,14 @@
+[Object]
+States = stnend1.csv
+
+[Include]
+esc.ANIMATED
+Position = 9,1,0
+
+[Object]
+States = stnend3.csv
+Position = 17,0,0
+
+[Include]
+esc.ANIMATED
+Position = 26,1,0

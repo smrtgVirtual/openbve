@@ -1,0 +1,13 @@
+CreateMeshBuilder
+AddVertex,0.425, 0.36, -0.2065
+AddVertex,0.435, 0.36, -0.2065
+AddVertex,0.435, 0.28, -0.1965
+AddVertex,0.425, 0.28, -0.1965
+AddFace,0,1,2,3
+SetEmissiveColor,255,255,255
+
+LoadTexture,digit_separator.png
+SetTextureCoordinates,0,0.2,0
+SetTextureCoordinates,1,0.8,0
+SetTextureCoordinates,2,0.8,1
+SetTextureCoordinates,3,0.2,1

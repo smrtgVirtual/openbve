@@ -1,0 +1,900 @@
+With Route
+Route.Comment WCRT Yishun LRT to Bottle Tree Park
+Route.Timetable WCRT Yishun LRT to Bottle Tree Park
+Route.Change 1
+Route.Gauge 1435
+Route.Elevation -10
+
+With Train
+Train.Folder yl150
+
+With Structure
+
+;Cut and Cover Tunnel;
+Structure.WallL(0) yslrt\tunnel\cnc_tl0\cnc_l_1.csv
+Structure.WallR(0) yslrt\tunnel\cnc_tl0\cnc_l_2.csv
+Structure.WallL(1) yslrt\tunnel\cnc_tl0\cnc_r_1.csv
+Structure.WallR(1) yslrt\tunnel\cnc_tl0\cnc_r_2.csv
+Structure.WallL(4) yslrt\tunnel\cnc_tl0\widecnc_l_1.csv
+Structure.WallR(4) yslrt\tunnel\cnc_tl0\widecnc_l_2.csv
+
+;Tunnel Boring Machine Made Tunnel;
+Structure.WallL(2) yslrt\tunnel\tbm_tl0\tbm_l_1.csv
+Structure.WallR(2) yslrt\tunnel\tbm_tl0\tbm_l_2.csv
+Structure.WallL(3) yslrt\tunnel\tbm_tl0\tbm_r_1.csv
+Structure.WallR(3) yslrt\tunnel\tbm_tl0\tbm_r_2.csv
+
+;Special;
+Structure.WallL(50) yslrt\tunnel\cnc_tl0\special\cnc_l_1.csv
+Structure.WallR(50) yslrt\tunnel\cnc_tl0\special\cnc_l_2.csv
+Structure.WallL(51) yslrt\tunnel\cnc_tl0\special\widecnc_l_1.csv
+Structure.WallR(51) yslrt\tunnel\cnc_tl0\special\widecnc_l_2.csv
+
+;Yishun Neighbourhood Park Station;
+Structure.Freeobj(0) yslrt\stations\ynb\stn0.ANIMATED
+Structure.Freeobj(1) yslrt\stations\ynb\stn1.ANIMATED
+Structure.Freeobj(2) yslrt\stations\ynb\stn2.ANIMATED
+Structure.Freeobj(3) yslrt\stations\ynb\stn3.ANIMATED
+Structure.Freeobj(103) yslrt\stations\ynb\RATiS.ANIMATED
+Structure.Freeobj(104) yslrt\stations\ynb\RATiS2.ANIMATED
+
+;Yishun Primary School Station;
+Structure.Freeobj(4) yslrt\stations\yps\stn0.ANIMATED
+Structure.Freeobj(5) yslrt\stations\yps\stn1.ANIMATED
+Structure.Freeobj(6) yslrt\stations\yps\stn2.ANIMATED
+Structure.Freeobj(7) yslrt\stations\yps\stn3.ANIMATED
+Structure.Freeobj(107) yslrt\stations\yps\RATiS.ANIMATED
+Structure.Freeobj(108) yslrt\stations\yps\RATiS2.ANIMATED
+
+;Yishun Primary School Station;
+Structure.Freeobj(8) yslrt\stations\yis\stn0.ANIMATED
+Structure.Freeobj(9) yslrt\stations\yis\stn1.ANIMATED
+Structure.Freeobj(10) yslrt\stations\yis\stn2.ANIMATED
+Structure.Freeobj(11) yslrt\stations\yis\stn3.ANIMATED
+Structure.Freeobj(111) yslrt\stations\yis\ratis\ratis_1.ANIMATED
+
+
+;Yishun Station;
+Structure.Freeobj(12) yslrt\stations\yis\stn0.ANIMATED
+Structure.Freeobj(13) yslrt\stations\yis\stn1.ANIMATED
+Structure.Freeobj(14) yslrt\stations\yis\stn2.ANIMATED
+Structure.Freeobj(15) yslrt\stations\yis\stn3.ANIMATED
+Structure.Freeobj(115) yslrt\stations\yis\RATiS1a.ANIMATED
+Structure.Freeobj(116) yslrt\stations\yis\RATiS2.ANIMATED
+Structure.Freeobj(117) yslrt\stations\yis\RATiS3.ANIMATED
+Structure.Freeobj(118) yslrt\stations\yis\RATiS4.ANIMATED
+
+;Khoo Teck Puat Hospital Station;
+Structure.Freeobj(16) yslrt\stations\ktp\stn0.ANIMATED
+Structure.Freeobj(17) yslrt\stations\ktp\stn1.ANIMATED
+Structure.Freeobj(18) yslrt\stations\ktp\stn2.ANIMATED
+Structure.Freeobj(19) yslrt\stations\ktp\stn3.ANIMATED
+Structure.Freeobj(119) yslrt\stations\ktp\RATiS.ANIMATED
+Structure.Freeobj(120) yslrt\stations\ktp\RATiS2.ANIMATED
+
+;Chung Cheng High School (Yishun) Station;
+Structure.Freeobj(20) yslrt\stations\cch\stn0.ANIMATED
+Structure.Freeobj(21) yslrt\stations\cch\stn1.ANIMATED
+Structure.Freeobj(22) yslrt\stations\cch\stn2.ANIMATED
+Structure.Freeobj(23) yslrt\stations\cch\stn3.ANIMATED
+Structure.Freeobj(123) yslrt\stations\cch\RATiS.ANIMATED
+Structure.Freeobj(124) yslrt\stations\cch\RATiS2.ANIMATED
+
+;Khatib Station;
+Structure.Freeobj(24) yslrt\stations\ktb\stn0.ANIMATED
+Structure.Freeobj(25) yslrt\stations\ktb\stn1.ANIMATED
+Structure.Freeobj(26) yslrt\stations\ktb\stn2.ANIMATED
+Structure.Freeobj(27) yslrt\stations\ktb\stn3.ANIMATED
+Structure.Freeobj(127) yslrt\stations\ktb\RATiS.ANIMATED
+Structure.Freeobj(128) yslrt\stations\ktb\RATiS2.ANIMATED
+Structure.Freeobj(129) yslrt\stations\ktb\RATiS3.ANIMATED
+Structure.Freeobj(130) yslrt\stations\ktb\RATiS4.ANIMATED
+
+;Bottle Tree Park Station;
+Structure.Freeobj(28) yslrt\stations\btp\stn0.ANIMATED
+Structure.Freeobj(29) yslrt\stations\btp\stn1.ANIMATED
+Structure.Freeobj(30) yslrt\stations\btp\stn2.ANIMATED
+Structure.Freeobj(31) yslrt\stations\btp\stn3.ANIMATED
+Structure.Freeobj(131) yslrt\stations\btp\RATiS2.ANIMATED
+Structure.Freeobj(132) yslrt\stations\btp\RATiS.ANIMATED
+
+;Cover;
+Structure.Freeobj(100) yslrt\tunnel\tbm_tl0\filler.csv
+Structure.Freeobj(101) yslrt\tunnel\tbm_tl0\filler_x.csv
+Structure.Freeobj(151) yslrt\tunnel\tbm_tl0\cover2.csv
+
+;Crossover;
+Structure.Freeobj(201) yslrt\tracks\xover_1.b3d
+Structure.Freeobj(202) yslrt\tracks\xover_2.b3d
+Structure.Freeobj(203) yslrt\tracks\xover_3.b3d
+Structure.Freeobj(204) yslrt\tracks\xover_4.b3d
+
+;Pointwork;
+Structure.Freeobj(301) yslrt\tracks\point_1.b3d
+Structure.Freeobj(302) yslrt\tracks\point_2.b3d
+Structure.Freeobj(303) yslrt\tracks\spcst.b3d
+Structure.Freeobj(304) yslrt\tracks\point_3.b3d
+
+;Dummy Tracks and Walls;
+Structure.Freeobj(350) yslrt\tracks\r_74.b3d
+Structure.Freeobj(351) yslrt\tunnel\cnc_tl0\widecnc_l_1.csv
+Structure.Freeobj(352) yslrt\tunnel\cnc_tl0\widecnc_l_2.csv
+Structure.Freeobj(353) yslrt\tunnel\cnc_tl0\topbottom.csv
+
+;Others;
+Structure.Freeobj(354) yslrt\tracks\buffer.b3d
+
+;Tracks;
+Structure.Rail(0) yslrt\tracks\straight.b3d
+Structure.Rail(1) yslrt\tracks\r_800.b3d
+Structure.Rail(2) yslrt\tracks\r_-800.b3d
+Structure.Rail(3) yslrt\tracks\r_-600.b3d
+Structure.Rail(4) yslrt\tracks\r_1000.b3d
+Structure.Rail(5) yslrt\tracks\r_74.b3d
+Structure.Rail(6) yslrt\tracks\r_600.b3d
+Structure.Rail(7) yslrt\tracks\r_400.b3d
+Structure.Rail(100) yslrt\tracks\nothing.csv
+
+With Track
+0
+Track.Limit 90
+Track.Brightness 0
+Track.Railstart 1;17;0;0
+Track.Wall 0;0;2
+Track.Wall 1;0;3
+
+5
+Track.Freeobj 0;354;;;180
+Track.Freeobj 1;354;;;180
+Track.Buffer
+
+75
+Track.Wallend 0
+Track.Wallend 1
+Track.Freeobj 0;0
+
+95
+Track.Brightness 0
+
+100
+Track.Section 0;2;4
+Track.Sta Yishun Neighbourhood Park;14.2700;;;R;0;1;;60;;;
+Track.Section 0;101;103;104;105;106;107;108;109;110;111;112;113
+Track.Beacon 7;-1;0;075075
+Track.Beacon 11;-1;0;1
+Track.Brightness 200
+Track.Freeobj 0;1
+Track.Destination 0;-1;2100;-2101;1;
+
+124
+Track.Freeobj 0;103;3.1;4
+
+125
+Track.Freeobj 0;2
+Track.Section 103;104;105;106;107;108;109;110;111;112
+
+126
+Track.Freeobj 0;104;13.9;4
+
+150
+Track.Freeobj 0;3
+Track.Stop 0;;;0
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+175
+Track.Railend 1
+Track.Wall 0;0;2
+Track.Curve 800
+Track.Railtype 0;1
+Track.Brightness 200
+
+180
+Track.Brightness 0
+
+275
+Track.Curve -800
+Track.Railtype 0;2
+
+350
+Track.Announce yslrt/nxt_yps.wav
+Track.Destination 0;-1;2101;2100;1;
+Track.Beacon 11;-1;0;2
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+375
+Track.Curve 0
+Track.Railtype 0;0
+
+400
+Track.Railstart 1;6;0;0
+Track.Wall 1;1;0
+Track.Railtype 0;100
+Track.Railtype 1;100
+Track.Freeobj 0;201
+Track.Freeobj 1;202
+Track.Freeobj 0;100
+Track.Railstart 2;0;0;100
+Track.Railstart 3;6;0;100
+Track.Wall 0;-1;1
+
+425
+Track.Rail 2;3
+Track.Rail 3;3
+Track.Freeobj 0;203
+Track.Freeobj 0;100
+Track.Freeobj 1;204
+
+450
+Track.Rail 2;6
+Track.Rail 3;0
+Track.Railend 2
+Track.Railend 3
+Track.Railtype 0;0
+Track.Railtype 1;0
+Track.Wall 0;0;2
+Track.Wall 1;0;3
+Track.Curve -600
+Track.Railtype 0;3
+
+550
+Track.Railend 1
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+750
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+950
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+Track.Beacon 6;-1;0;01010500
+
+975
+Track.Beacon 6;-1;0;02020500
+
+1150
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+1275
+Track.Announce yslrt/yps.wav
+Track.Beacon 11;-1;0;3
+Track.Destination 0;-1;2102;2101;1;
+
+1350
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+Track.Beacon 6;-1;0;01010100
+
+1375
+Track.Railstart 1;17;0;0
+Track.Beacon 6;-1;0;02020100
+
+1400
+Track.Curve 0
+Track.Railtype 0;0
+Track.Freeobj 0;4
+Track.Wallend 0
+Track.Wallend 1
+
+1420
+Track.Brightness 0
+
+1425
+Track.Brightness 200
+Track.Sta Yishun Primary School;14.2950;;;R;0;;;30;;;
+Track.Freeobj 0;5
+
+1449
+Track.Beacon 6;-1;0;01010001
+Track.Freeobj 0;107;3.1;4
+
+1450
+Track.Freeobj 0;6
+Track.Stop 0;;;1
+Track.Beacon 6;-1;0;01010000
+
+1451
+Track.Freeobj 0;108;13.9;4
+
+1474
+Track.Beacon 6;-1;0;02020001
+
+1475
+Track.Freeobj 0;7
+Track.Stop 0;;;0
+Track.Beacon 6;-1;0;02020000
+
+1500
+Track.Brightness 200
+Track.Wall 0;0;2
+Track.Wall 1;0;3
+Track.Pitch -15
+
+1505
+Track.Brightness 0
+
+1525
+Track.Beacon 6;-1;0;01010400
+
+1550
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+Track.Beacon 6;-1;0;02020400
+
+1600
+Track.Pitch 0
+Track.Height -12
+
+1625
+Track.Rail 1;18
+
+1650
+Track.Rail 1;19
+
+1675
+Track.Rail 1;20
+Track.Announce yslrt/nxt_yis.wav
+Track.Beacon 11;-1;0;4
+Track.Destination 0;-1;2103;2102;1;
+
+1700
+Track.Curve 1000
+Track.Railtype 0;4
+Track.Rail 1;24
+
+1725
+Track.Rail 1;28
+
+1750
+Track.Rail 1;32
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+1775
+Track.Rail 1;34
+
+1800
+Track.Curve 0
+Track.Railtype 0;100
+Track.Railtype 1;100
+Track.Rail 1;34
+Track.Railstart 2;0;0;100
+Track.Railstart 3;34;0;100
+Track.Wall 0;-1;1
+Track.Wall 1;1;0
+Track.Freeobj 0;301
+Track.Freeobj 1;302
+Track.Freeobj 0;151
+Track.Freeobj 0;101
+
+1825
+Track.Rail 2;4.25
+Track.Freeobj 2;303
+Track.Rail 3;29.75
+Track.Freeobj 3;303
+Track.Railtype 0;0
+Track.Freeobj 0;101
+Track.Railtype 1;0
+Track.Railstart 4;17;0;100
+Track.Beacon 6;-1;0;01010100
+
+1850
+Track.Rail 2;12.75
+Track.Rail 3;21.25
+Track.Railtype 2;100
+Track.Railtype 3;100
+Track.Freeobj 0;101
+Track.Freeobj 4;304
+Track.Beacon 11;-1;0;5
+Track.Beacon 6;-1;0;02020100
+
+1875
+Track.Rail 2;17
+Track.Rail 3;17
+Track.Railtype 2;0
+Track.Railend 3
+Track.Railend 4
+Track.Wallend 0
+Track.Wallend 1
+Track.Freeobj 0;12
+Track.Beacon 6;-1;0;01010050
+Track.Destination 0;-1;2104;2103;1;
+
+1895
+Track.Brightness 0
+
+1900
+Track.Sta Yishun Interchange;14.3127;;;R;0;;;45;;;
+Track.Freeobj 0;13
+Track.Brightness 200
+Track.Beacon 6;-1;0;02020050
+
+1924
+Track.Beacon 6;-1;0;01010001
+Track.Freeobj 0;115;3.1;4
+Track.Freeobj 0;118;20.1;4
+
+1925
+Track.Freeobj 0;14
+Track.Stop 0;;;1
+Track.Beacon 6;-1;0;01010000
+
+1926
+Track.Freeobj 0;116;30.9;4
+Track.Freeobj 0;117;13.9;4
+
+1949
+Track.Beacon 6;-1;0;02020001
+
+1950
+Track.Freeobj 0;15
+Track.Stop 0;;;0
+Track.Beacon 6;-1;0;02020000
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+1975
+Track.Brightness 200
+Track.Railtype 0;100
+Track.Railstart 3;0;0;100
+Track.Freeobj 0;301
+Track.Freeobj 0;353
+Track.Wall 0;-1;0
+Track.Wall 3;1;4
+Track.Railend 1
+Track.Railend 2
+
+1980
+Track.Brightness 0
+
+2000
+Track.Rail 3;4.2
+Track.Railtype 3;5
+Track.Railtype 0;0
+Track.Wall 0;0;50
+Track.Wall 3;0;51
+
+2022
+Track.Freeobj 0;350;15.6;;45
+Track.Freeobj 0;351;15.6;;45
+Track.Freeobj 0;352;15.6;;45
+
+2025
+Track.Rail 3;17.22
+Track.Railend 3
+Track.Wall 0;0;2
+
+2040
+Track.Freeobj 0;350;33.7;;60
+Track.Freeobj 0;351;33.7;;60
+Track.Freeobj 0;352;33.7;;60
+
+2052.4
+Track.Freeobj 0;350;55;;75
+Track.Freeobj 0;351;55;;75
+Track.Freeobj 0;352;55;;75
+
+2075
+Track.Railtype 0;3
+Track.Curve -600
+
+2150
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+Track.Announce yslrt/nxt_ktp.wav
+Track.Beacon 11;-1;0;6
+Track.Destination 0;-1;2105;2104;1;
+
+2350
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+2550
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+2575
+Track.Curve 600
+Track.Railtype 0;6
+
+2625
+Track.Beacon 6;-1;0;01010500
+
+2650
+Track.Beacon 6;-1;0;02020500
+
+2750
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+2900
+Track.Announce yslrt/ktp.wav
+Track.Beacon 11;-1;0;7
+Track.Destination 0;-1;2106;2105;1;
+
+2950
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+3025
+Track.Beacon 6;-1;0;01010100
+
+3050
+Track.Railstart 1;17;0;0
+Track.Wall 1;0;3
+Track.Beacon 6;-1;0;02020100
+
+3075
+Track.Curve 0
+Track.Freeobj 0;16
+Track.Wallend 0
+Track.Wallend 1
+Track.Railtype 0;0
+Track.Beacon 6;-1;0;01010050
+
+3095
+Track.Brightness 0
+
+3100
+Track.Brightness 200
+Track.Sta Khoo Teck Puat Hospital;14.3355;;;R;0;;;30;;;
+Track.Freeobj 0;17
+Track.Beacon 6;-1;0;02020050
+
+3124
+Track.Beacon 6;-1;0;01010001
+Track.Freeobj 0;119;3.1;4
+
+3125
+Track.Freeobj 0;18
+Track.Stop 0;;;1
+Track.Beacon 6;-1;0;01010000
+
+3126
+Track.Freeobj 0;120;13.9;4
+
+3149
+Track.Beacon 6;-1;0;02020001
+
+3150
+Track.Freeobj 0;19
+Track.Beacon 6;-1;0;02020000
+Track.Stop 0;;;0
+
+3175
+Track.Brightness 200
+Track.Wall 0;0;2
+Track.Wall 1;0;3
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+3180
+Track.Brightness 0
+
+3225
+Track.Railend 1
+
+3275
+Track.Beacon 6;-1;0;01010500
+
+3300
+Track.Beacon 6;-1;0;02020500
+
+3350
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+Track.Announce yslrt/nxt_cch.wav
+Track.Beacon 11;-1;0;8
+Track.Destination 0;-1;2107;2106;1;
+
+3550
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+3675
+Track.Beacon 6;-1;0;01010100
+
+3700
+Track.Railstart 1;7;0;0
+Track.Wall 1;0;3
+Track.Announce yslrt/cch.wav
+Track.Beacon 11;-1;0;9
+Track.Beacon 6;-1;0;02020100
+Track.Destination 0;-1;2108;2107;1;
+
+3725
+Track.Wallend 0
+Track.Wallend 1
+Track.Freeobj 0;20
+Track.Beacon 6;-1;0;01010050
+
+3745
+Track.Brightness 0
+
+3750
+Track.Brightness 200
+Track.Sta Chung Cheng High School (Yishun);14.3540;;;L;0;;;30;;;
+Track.Freeobj 0;21
+Track.Beacon 6;-1;0;02020050
+
+3774
+Track.Beacon 6;-1;0;01010001
+Track.Freeobj 0;123;-3.1;4
+
+3775
+Track.Freeobj 0;22
+Track.Stop 0;;;1
+Track.Beacon 6;-1;0;01010000
+
+3776
+Track.Freeobj 0;124;10.1;4
+
+3799
+Track.Beacon 6;-1;0;02020001
+
+3800
+Track.Freeobj 0;23
+Track.Beacon 6;-1;0;02020001
+Track.Stop 0;;;0
+
+3820
+Track.Brightness 200
+
+3825
+Track.Brightness 0
+Track.Wall 0;0;2
+Track.Wall 1;0;3
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+3850
+Track.Curve 400
+Track.Railtype 0;7
+Track.Pitch -10
+
+3875
+Track.Railend 1
+
+3975
+Track.Beacon 6;-1;0;01010500
+
+4000
+Track.Pitch 0
+Track.Announce yslrt/nxt_ktb.wav
+Track.Beacon 11;-1;0;10
+Track.Beacon 6;-1;0;02020500
+Track.Destination 0;-1;2109;2108;1;
+
+4075
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+4100
+Track.Pitch 8
+
+4250
+Track.Beacon 11;-1;0;11
+
+4275
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+4375
+Track.Railstart 1;7;0;0
+Track.Beacon 6;-1;0;01010100
+
+4400
+Track.Beacon 6;-1;0;02020100
+
+4425
+Track.Wallend 0
+Track.Wallend 1
+Track.Freeobj 0;24
+Track.Railtype 0;0
+Track.Curve 0
+Track.Pitch 0
+Track.Wallend 1
+Track.Railstart 2;-17;0;0
+Track.Wallend 2
+Track.Railstart 3;24;0;0
+Track.Wallend 3
+Track.Beacon 6;-1;0;01010050
+Track.Destination 0;-1;2110;2109;1;
+
+4445
+Track.Brightness 0
+
+4450
+Track.Brightness 255
+Track.Freeobj 0;25
+Track.Sta Khatib;14.3727;;;L;0;;;45;;;
+Track.Beacon 6;-1;0;02020050
+
+4474
+Track.Beacon 6;-1;0;01010001
+Track.Freeobj 0;127;-13.99;4
+Track.Freeobj 0;129;10.01;4
+
+4475
+Track.Freeobj 0;26
+Track.Stop 0;;;1
+Track.Beacon 6;-1;0;01010000
+
+4476
+Track.Freeobj 0;128;-3.01;4
+Track.Freeobj 0;130;20.99;4
+
+4499
+Track.Beacon 6;-1;0;02020001
+
+4500
+Track.Freeobj 0;27
+Track.Beacon 6;-1;0;02020000
+Track.Stop 0;;;0
+
+4520
+Track.Brightness 255
+
+4525
+Track.Brightness 0
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+Track.Wall 0;0;2
+Track.Wall 1;0;3
+Track.Wall 2;0;3
+Track.Wall 3;0;2
+
+4575
+Track.Railend 1
+Track.Railend 2
+Track.Railend 3
+Track.Curve -600
+Track.Pitch -10
+Track.Railtype 0;3
+
+4700
+Track.Announce yslrt/nxt_btp.wav
+Track.Beacon 11;-1;0;12
+Track.Destination 0;-1;2111;2110;1;
+
+4725
+Track.Pitch 0
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+4750
+Track.Pitch 8
+
+4925
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+5025
+Track.Pitch 0
+
+5050
+Track.Beacon 6;-1;0;01010500
+
+5100
+Track.Beacon 6;-1;0;02020500
+
+5125
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+5300
+Track.Railstart 1;6;0;0
+Track.Railtype 0;0
+Track.Curve 0
+
+5325
+Track.Wall 0;-1;1
+Track.Wall 1;1;0
+Track.Freeobj 0;100
+Track.Railtype 0;100
+Track.Railtype 1;100
+Track.Freeobj 0;201
+Track.Freeobj 1;202
+Track.Railstart 2;0;0;100
+Track.Railstart 3;6;0;100
+Track.Wallend 2
+Track.Wallend 3
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+Track.Announce yslrt/btp.wav
+Track.Destination 0;-1;2112;2111;1;
+Track.Beacon 11;-1;0;13
+
+5350
+Track.Freeobj 0;100
+Track.Freeobj 0;203
+Track.Freeobj 1;204
+Track.Rail 2;3
+Track.Rail 3;3
+
+5375
+Track.Wall 0;0;2
+Track.Wall 1;0;3
+Track.Railtype 0;0
+Track.Railtype 1;7
+Track.Rail 2;6
+Track.Rail 3;0
+Track.Railend 2
+Track.Railend 3
+
+5400
+Track.Rail 1;8
+
+5425
+Track.Rail 1;11
+
+5450
+Track.Rail 1;15
+Track.Railtype 1;3
+Track.Beacon 6;-1;0;01010100
+
+5475
+Track.Announce yslrt/btp_arr.wav
+Track.Rail 1;17
+Track.Railtype 1;0
+Track.Beacon 6;-1;0;02020100
+
+5500
+Track.Wallend 0
+Track.Wallend 1
+Track.Freeobj 0;28
+Track.Beacon 6;-1;0;01010050
+
+5520
+Track.Brightness 0
+
+5525
+Track.Brightness 200
+Track.Sta Bottle Tree Park;14.3914;;;R;0;;;30;;;
+Track.Freeobj 0;29
+Track.Beacon 6;-1;0;02020050
+
+5549
+Track.Beacon 6;-1;0;01010001
+Track.Freeobj 0;132;3.1;4
+
+5550
+Track.Freeobj 0;30
+Track.Stop 0;;;1
+Track.Beacon 6;-1;0;01010000
+
+5551
+Track.Freeobj 0;131;13.9;4
+
+5574
+Track.Beacon 6;-1;0;02020001
+
+5575
+Track.Freeobj 0;31
+Track.Beacon 6;-1;0;02020000
+Track.Stop 0;;;0
+
+5595
+Track.Brightness 200
+
+5600
+Track.Brightness 0
+Track.Wall 0;0;2
+Track.Wall 1;0;3
+Track.Section 101;102;103;104;105;106;107;108;109;110;111;112
+Track.Beacon 7;-1;0;075075
+
+5670
+Track.Freeobj 0;354
+Track.Freeobj 1;354
+Track.Buffer
+
+5675
+Track.Wallend 0
+Track.Wallend 1
+Track.Railtype 0;100
+Track.Railtype 1;100

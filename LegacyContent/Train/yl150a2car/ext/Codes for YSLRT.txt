@@ -1,0 +1,290 @@
+;;;;YSH;;;;
+
+YS1:
+Route CSV: Track.Destination 0;-1;2000;-2001;1;
+
+Animated:
+L: StateFunction = if[destination==2000,0,-1]
+R: StateFunction = if[destination==2000,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS2:
+Route CSV: Track.Destination 0;-1;2001;2000;1;
+
+Animated:
+L: StateFunction = if[destination==2001,value==0,-1]
+R: StateFunction = if[destination==2001,value==0,-1]
+
+------------------------------------------------------
+
+YS2:
+Route CSV: Track.Destination 0;-1;2002;2001;1;
+
+Animated:
+L: StateFunction = if[destination==2002,0,-1]
+R: StateFunction = if[destination==2002,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS3:
+Route CSV: Track.Destination 0;-1;2003;2002;1;
+
+Animated:
+L: StateFunction = if[destination==2003,value==0,-1]
+R: StateFunction = if[destination==2003,value==0,-1]
+
+------------------------------------------------------
+
+YS3:
+Route CSV: Track.Destination 0;-1;2004;2003;1;
+
+Animated:
+L: StateFunction = if[destination==2004,0,-1]
+R: StateFunction = if[destination==2004,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS4b:
+Route CSV: Track.Destination 0;-1;2005;2004;1;
+
+Animated:
+L: StateFunction = if[destination==2005,value==0,-1]
+R: StateFunction = if[destination==2005,value==0,-1]
+
+------------------------------------------------------
+
+YS4b:
+Route CSV: Track.Destination 0;-1;2006;2005;1;
+
+Animated:
+L: StateFunction = if[destination==2006,0,-1]
+R: StateFunction = if[destination==2006,value==0,-1]
+
+------------------------------------------------------
+
+YS5b:
+Route CSV: Track.Destination 0;-1;2007;2006;1;
+
+Animated:
+L: StateFunction = if[destination==2007,0,-1]
+R: StateFunction = if[destination==2007,0,-1]
+
+------------------------------------------------------
+
+Nxt_YS6b:
+Route CSV: Track.Destination 0;-1;2008;2007;1;
+
+Animated:
+L: StateFunction = if[destination==2008,value==0,-1]
+R: StateFunction = if[destination==2008,value==0,-1]
+
+------------------------------------------------------
+
+YS6b:
+Route CSV: Track.Destination 0;-1;2009;2008;1;
+
+Animated:
+L: StateFunction = if[destination==2009,0,-1]
+R: StateFunction = if[destination==2009,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS7b:
+Route CSV: Track.Destination 0;-1;2010;2009;1;
+
+Animated:
+L: StateFunction = if[destination==2010,value==0,-1]
+R: StateFunction = if[destination==2010,value==0,-1]
+
+------------------------------------------------------
+
+YS7b:
+Route CSV: Track.Destination 0;-1;2011;2010;1;
+
+Animated:
+L: StateFunction = if[destination==2011,0,-1]
+R: StateFunction = if[destination==2011,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS8b:
+Route CSV: Track.Destination 0;-1;2012;2011;1;
+
+Animated:
+L: StateFunction = if[destination==2012,value==0,-1]
+R: StateFunction = if[destination==2012,value==0,-1]
+
+------------------------------------------------------
+
+YS8b:
+Route CSV: Track.Destination 0;-1;2013;2012;1;
+
+Animated:
+L: StateFunction = if[destination==2013,value==0,-1]
+R: StateFunction = if[destination==2013,0,-1]
+
+------------------------------------------------------
+
+Nxt_YS9b:
+Route CSV: Track.Destination 0;-1;2014;2013;1;
+
+Animated:
+L: StateFunction = if[destination==2014,value==0,-1]
+R: StateFunction = if[destination==2014,value==0,-1]
+
+------------------------------------------------------
+
+YS9b:
+Route CSV: Track.Destination 0;-1;2015;2014;1;
+
+Animated:
+L: StateFunction = if[destination==2015,value==0,-1]
+R: StateFunction = if[destination==2015,0,-1]
+
+
+;;;;BTP;;;;
+
+YS1:
+Route CSV: Track.Destination 0;-1;2100;-2101;1;
+
+Animated:
+L: StateFunction = if[destination==2100,0,-1]
+R: StateFunction = if[destination==2100,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS2:
+Route CSV: Track.Destination 0;-1;2101;2100;1;
+
+Animated:
+L: StateFunction = if[destination==2101,value==0,-1]
+R: StateFunction = if[destination==2101,value==0,-1]
+
+------------------------------------------------------
+
+YS2:
+Route CSV: Track.Destination 0;-1;2102;2101;1;
+
+Animated:
+L: StateFunction = if[destination==2102,0,-1]
+R: StateFunction = if[destination==2102,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS3:
+Route CSV: Track.Destination 0;-1;2103;2102;1;
+
+Animated:
+L: StateFunction = if[destination==2103,value==0,-1]
+R: StateFunction = if[destination==2103,value==0,-1]
+
+------------------------------------------------------
+
+YS3:
+Route CSV: Track.Destination 0;-1;2104;2103;1;
+
+Animated:
+L: StateFunction = if[destination==2104,0,-1]
+R: StateFunction = if[destination==2104,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS4a:
+Route CSV: Track.Destination 0;-1;2105;2104;1;
+
+Animated:
+L: StateFunction = if[destination==2105,value==0,-1]
+R: StateFunction = if[destination==2105,value==0,-1]
+
+------------------------------------------------------
+
+YS4a:
+Route CSV: Track.Destination 0;-1;2106;2105;1;
+
+Animated:
+L: StateFunction = if[destination==2106,0,-1]
+R: StateFunction = if[destination==2106,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS5a:
+Route CSV: Track.Destination 0;-1;2107;2106;1;
+
+Animated:
+L: StateFunction = if[destination==2107,value==0,-1]
+R: StateFunction = if[destination==2107,value==0,-1]
+
+------------------------------------------------------
+
+YS5a:
+Route CSV: Track.Destination 0;-1;2108;2107;1;
+
+Animated:
+L: StateFunction = if[destination==2108,0,-1]
+R: StateFunction = if[destination==2108,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS6a:
+Route CSV: Track.Destination 0;-1;2109;2108;1;
+
+Animated:
+L: StateFunction = if[destination==2109,value==0,-1]
+R: StateFunction = if[destination==2109,value==0,-1]
+
+------------------------------------------------------
+
+YS6a:
+Route CSV: Track.Destination 0;-1;2110;2109;1;
+
+Animated:
+L: StateFunction = if[destination==2110,0,-1]
+R: StateFunction = if[destination==2110,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS7a:
+Route CSV: Track.Destination 0;-1;2111;2110;1;
+
+Animated:
+L: StateFunction = if[destination==2111,value==0,-1]
+R: StateFunction = if[destination==2111,value==0,-1]
+
+------------------------------------------------------
+
+YS7a:
+Route CSV: Track.Destination 0;-1;2112;2111;1;
+
+Animated:
+L: StateFunction = if[destination==2112,0,-1]
+R: StateFunction = if[destination==2112,value==0,-1]
+
+
+;;;; NSC;;;;
+
+YS3:
+Route CSV: Track.Destination 0;-1;2200;-2201;1;
+
+Animated:
+L: StateFunction = if[destination==2200,0,-1]
+R: StateFunction = if[destination==2200,value==0,-1]
+
+------------------------------------------------------
+
+Nxt_YS4c:
+Route CSV: Track.Destination 0;-1;2201;2200;1;
+
+Animated:
+L: StateFunction = if[destination==2201,value==0,-1]
+R: StateFunction = if[destination==2201,value==0,-1]
+
+------------------------------------------------------
+
+YS4c:
+Route CSV: Track.Destination 0;-1;2202;2201;1;
+
+Animated:
+L: StateFunction = if[destination==2202,0,-1]
+R: StateFunction = if[destination==2202,value==0,-1]
+

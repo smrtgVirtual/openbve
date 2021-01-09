@@ -1,0 +1,4 @@
+[Object]
+States = light_dark.csv,light_dark.csv,light_dark.csv,light_dark.csv,light_dark.csv,light_dark.csv,light_dark.csv,light_dark.csv,light_dark.csv,light_bright.csv
+StateFunction = mod[value + 1, 10]
+RefreshRate = 0.1

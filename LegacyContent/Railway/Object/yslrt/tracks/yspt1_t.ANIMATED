@@ -1,0 +1,42 @@
+[Object]
+States = straight.b3d
+RotateYFunction = -0.32
+Position = -4.25,0,0
+
+[Object]
+States = straight.b3dx
+
+[Object]
+States = straight.b3d
+Position = 25.5,0,0
+RotateYFunction = -0.64
+
+[Object]
+States = straight.b3d
+Position = 29.75,0,0
+RotateYFunction = -0.32
+
+[Object]
+States = filler.csv
+Position = -4.25,0,0
+RotateYFunction = -0.32
+
+[Object]
+States = filler.csv
+Position = 23.75,0,0
+RotateYFunction = -0.32
+
+[Object]
+States = filler_x.csv
+Position = -4.25,0,0
+RotateYFunction = -0.32
+
+[Object]
+States = cnc_l_1.csv
+Position = -4.25,0,0
+RotateYFunction = -0.32
+
+[Object]
+States = cnc_r_2.csv
+Position = 29.75,0,0
+RotateYFunction = -0.32

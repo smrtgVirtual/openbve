@@ -1,0 +1,115 @@
+;Door Set 1;
+[Object]
+States = door_1a.csv
+Position = 0,0,6
+TranslateZFunction = 1
+
+[Object]
+States = door_2a.csv
+Position = 0,0,6
+TranslateZFunction = -1
+
+[Object]
+States = door_1r.csv
+Position = 17,0,6
+
+[Object]
+States = door_2r.csv
+Position = 17,0,6
+
+[Object]
+States = queue.csv
+Position = 0,0,6
+
+[Object]
+States = queue_r.csv
+Position = 0,0,6
+
+;Door Set 2;
+[Object]
+States = door_1a.csv
+Position = 0,0,12.25
+TranslateZFunction = 1
+
+[Object]
+States = door_2a.csv
+Position = 0,0,12.25
+TranslateZFunction = -1
+
+[Object]
+States = door_1r.csv
+Position = 17,0,12.25
+
+[Object]
+States = door_2r.csv
+Position = 17,0,12.25
+
+[Object]
+States = queue.csv
+Position = 0,0,12.25
+
+[Object]
+States = queue_r.csv
+Position = 0,0,12.25
+
+;Door Set 3;
+[Object]
+States = door_1a.csv
+Position = 0,0,19
+TranslateZFunction = 1
+
+[Object]
+States = door_2a.csv
+Position = 0,0,19
+TranslateZFunction = -1
+
+[Object]
+States = door_1r.csv
+Position = 17,0,19
+
+[Object]
+States = door_2r.csv
+Position = 17,0,19
+
+[Object]
+States = queue.csv
+Position = 0,0,19
+
+[Object]
+States = queue_r.csv
+Position = 0,0,19
+
+;Platform;
+[Object]
+States = stn.csv
+
+;Seat Pair 1;
+[Object]
+States = seat.csv
+Position = 6.5,1,6
+
+[Object]
+States = seat.csv
+Position = 10.5,1,6
+
+;Pillar;
+[Object]
+States = pillar.csv
+Position = 0,0,10.5
+
+[Object]
+States = map.csv
+Position = 7.95,1.4,13.25
+
+[Object]
+States = map1.csv
+Position = 8.95,1.4,13.25
+
+;Seat Pair 2;
+[Object]
+States = seat.csv
+Position = 6.5,1,19
+
+[Object]
+States = seat.csv
+Position = 10.5,1,19

@@ -1,0 +1,40 @@
+;Real Travel Information System (RATIS)
+;Coded by boylush for openBVE/TSF Circle Line Singapore
+;RATIS Frame Covers(Angled)
+;Fixed Object
+
+;TOP;
+CreateMeshBuilder
+AddVertex,-0.89,0.999,-0.1
+AddVertex,-0.89,0.999,0.7
+AddVertex,0.89,0.999,0.7
+AddVertex,0.89,0.999,-0.1
+AddFace,0,1,2,3
+SetColor,60,60,60
+
+;BTM;
+CreateMeshBuilder
+AddVertex,-0.89,0.014,0.0785
+AddVertex,-0.89,0.014,0.522
+AddVertex,0.89,0.014,0.522
+AddVertex,0.89,0.014,0.0785
+AddFace,3,2,1,0
+SetColor,52,52,52
+
+;LEFT;
+CreateMeshBuilder
+AddVertex,-0.89,0.999,-0.1
+AddVertex,-0.89,0.999,0.7
+AddVertex,-0.89,0.014,0.5215
+AddVertex,-0.89,0.014,0.0785
+AddFace,3,2,1,0
+SetColor,52,52,52
+
+;RIGHT;
+CreateMeshBuilder
+AddVertex,0.89,0.999,-0.1
+AddVertex,0.89,0.999,0.7
+AddVertex,0.89,0.014,0.5215
+AddVertex,0.89,0.014,0.0785
+AddFace,0,1,2,3
+SetColor,52,52,52

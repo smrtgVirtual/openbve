@@ -1,0 +1,8 @@
+CreateMeshBuilder,
+AddVertex,0.675,1.98,23.995
+AddVertex,0.875,1.98,23.995
+AddVertex,0.875,1.94,23.995
+AddVertex,0.675,1.94,23.995
+AddFace2,0,1,2,3
+LoadTexture,base.bmp
+SetEmissiveColor,255,255,255

@@ -1,0 +1,130 @@
+;Door Set 1;
+[Object]
+States = door_1r.csv
+Position = 0,0,6
+TranslateZFunction = if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]
+
+[Object]
+States = door_2r.csv
+Position = 0,0,6
+TranslateZFunction = minus[if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]]
+
+[Object]
+States = door_1.csv
+Position = 0,0,6
+TranslateZFunction = if[TrackDistance<0.5 & TrackDistance>(-0.5), if[rightdoorstarget == 1, if[rightdoors>=0.2,((rightdoors-0.2)*(rightdoors-0.2))/0.64,0],rightdoors*rightdoors], 0]
+
+[Object]
+States = door_2.csv
+Position = 0,0,6
+TranslateZFunction = minus[if[TrackDistance<0.5 & TrackDistance>(-0.5), if[rightdoorstarget == 1, if[rightdoors>=0.2,((rightdoors-0.2)*(rightdoors-0.2))/0.64,0],rightdoors*rightdoors], 0]]
+
+;Door Set 2;
+[Object]
+States = door_1r.csv
+Position = 0,0,12.25
+TranslateZFunction = if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]
+
+[Object]
+States = door_2r.csv
+Position = 0,0,12.25
+TranslateZFunction = minus[if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]]
+
+[Object]
+States = door_1.csv
+Position = 0,0,12.25
+TranslateZFunction = if[TrackDistance<0.5 & TrackDistance>(-0.5), if[rightdoorstarget == 1, if[rightdoors>=0.2,((rightdoors-0.2)*(rightdoors-0.2))/0.64,0],rightdoors*rightdoors], 0]
+
+[Object]
+States = door_2.csv
+Position = 0,0,12.25
+TranslateZFunction = minus[if[TrackDistance<0.5 & TrackDistance>(-0.5), if[rightdoorstarget == 1, if[rightdoors>=0.2,((rightdoors-0.2)*(rightdoors-0.2))/0.64,0],rightdoors*rightdoors], 0]]
+
+;Door Set 3;
+[Object]
+States = door_1r.csv
+Position = 0,0,19
+TranslateZFunction = if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]
+
+[Object]
+States = door_2r.csv
+Position = 0,0,19
+TranslateZFunction = minus[if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]]
+
+[Object]
+States = door_1.csv
+Position = 0,0,19
+TranslateZFunction = if[TrackDistance<0.5 & TrackDistance>(-0.5), if[rightdoorstarget == 1, if[rightdoors>=0.2,((rightdoors-0.2)*(rightdoors-0.2))/0.64,0],rightdoors*rightdoors], 0]
+
+[Object]
+States = door_2.csv
+Position = 0,0,19
+TranslateZFunction = minus[if[TrackDistance<0.5 & TrackDistance>(-0.5), if[rightdoorstarget == 1, if[rightdoors>=0.2,((rightdoors-0.2)*(rightdoors-0.2))/0.64,0],rightdoors*rightdoors], 0]]
+
+;Platform;
+[Object]
+States = stn.csv
+
+;Seat Pair 1;
+[Object]
+States = seat.csv
+Position = -8,1,6
+
+[Object]
+States = seat.csv
+Position = 8,1,6
+
+[Object]
+States = map.csv
+Position = 8.4,1.4,13.25
+
+[Object]
+States = map1.csv
+Position = -8.5,1.4,13.25
+
+;Seat Pair 2;
+[Object]
+States = seat.csv
+Position = -8,1,19
+
+[Object]
+States = seat.csv
+Position = 8,1,19
+
+;LightWORKING L;
+[Object]
+States = door closing\left\off.csv, door closing\left\on.csv
+Position= -2, 3.05, 5.8
+StateFunction = if[leftDoors,if[leftDoorsTarget,1,value == 0],0]
+RefreshRate = 0.5
+
+[Object]
+States = door closing\left\off.csv, door closing\left\on.csv
+Position= -2, 3.05, 12.05
+StateFunction = if[leftDoors,if[leftDoorsTarget,1,value == 0],0]
+RefreshRate = 0.5
+
+[Object]
+States = door closing\left\off.csv, door closing\left\on.csv
+Position= -2, 3.05, 18.8
+StateFunction = if[leftDoors,if[leftDoorsTarget,1,value == 0],0]
+RefreshRate = 0.5
+
+;LightWORKING R;
+[Object]
+States = door closing\off.csv, door closing\on.csv
+Position= 2, 3.05, 5.8
+StateFunction = if[rightDoors,if[rightDoorsTarget,1,value == 0],0]
+RefreshRate = 0.5
+
+[Object]
+States = door closing\off.csv, door closing\on.csv
+Position= 2, 3.05, 12.05
+StateFunction = if[rightDoors,if[rightDoorsTarget,1,value == 0],0]
+RefreshRate = 0.5
+
+[Object]
+States = door closing\off.csv, door closing\on.csv
+Position= 2, 3.05, 18.8
+StateFunction = if[rightDoors,if[rightDoorsTarget,1,value == 0],0]
+RefreshRate = 0.5

@@ -1,0 +1,73 @@
+;Real Travel Information System (RATIS)
+;Coded by boylush for openBVE/TSF Circle Line Singapore
+;RATIS with LED blinking
+;Flat and optimised single sided screen (for Stadium MRT)
+;Animated Object
+
+;include objects
+[include]
+model/RATIS_FRAME_1FLAT.csv
+
+
+;Train arrival displays
+[Object]
+States = model/timing/tmspy.csv, model/timing/tmspyy.csv
+StateFunction = value == 0
+RefreshRate = 1.05
+
+;Include a truncated train countdown/departure
+[Object]
+States = model/timing/BLANKDISP.csv, model/timing/tmsp3.csv, model/timing/tmsp2.csv, model/timing/tmsp1.csv, model/timing/ttpy1.csv
+StateFunction = if [trackDistance>1500, 1,if [trackDistance>750, 2,if [trackDistance>100, 3, if [trackDistance<-80, 4, 0]]]]
+RefreshRate = 1
+
+;Include a scrolly information thingy
+[Object]
+States = model/info/infotest.csv
+TextureShiftXFunction = value+0.07*delta
+
+
+;ClockTime
+;Clock tells time
+
+;digital RATIS clock
+;originally made by Anthony_B
+;modified by Flip
+;Adapted for NSEWL RATIS by boylush
+;you are allowed to use this work in your routes but you have to keep the header intact
+
+; Hours
+
+[Object]
+States = model/time/digit.csv
+Position = -0.671, 0, 0.185
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 12] * 0.1]
+
+[Object]
+States = model/time/digit.csv
+Position = -0.659, 0, 0.185
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 12]]
+
+[Object]
+States = model/time/digit_separator.csv
+Position = -0.653, 0, 0.185
+
+; Minutes
+
+[Object]
+States = model/time/digit.csv
+Position = -0.637, 0, 0.185
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.0166666666666667, 60] * 0.1]
+
+[Object]
+States = model/time/digit.csv
+Position = -0.625, 0, 0.185
+TextureShiftYFunction = 0.1 * floor[time * 0.0166666666666667]
+
+; Letters
+
+[Object]
+States = model/time/letters.csv
+Position = -0.588, 0, 0.185
+TextureShiftYFunction = 0.5 * floor[mod[time * 0.000023148148148148148148148148148148, 3]]
+

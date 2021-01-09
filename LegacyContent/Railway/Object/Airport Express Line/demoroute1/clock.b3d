@@ -1,0 +1,27 @@
+﻿[MeshBuilder]
+Vertex -0.3, -0.3, 0
+Vertex -0.3, 0.3, 0
+Vertex 0.3, 0.3, 0
+Vertex 0.3, -0.3, 0
+Face 0, 1, 2, 3
+Load clock.png
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+[MeshBuilder]
+Vertex -0.3, -0.3, 0
+Vertex -0.3, 0.3, 0
+Vertex 0.3, 0.3, 0
+Vertex 0.3, -0.3, 0
+Vertex -0.3, -0.3, 0.2
+Vertex -0.3, 0.3, 0.2
+Vertex 0.3, 0.3, 0.2
+Vertex 0.3, -0.3, 0.2
+Face 1, 5, 6, 2
+Face 0, 4, 5, 1
+Face 4, 7, 6, 5
+Face 2, 6, 7, 3
+Face 0, 3, 7, 4
+Color 128, 128, 128

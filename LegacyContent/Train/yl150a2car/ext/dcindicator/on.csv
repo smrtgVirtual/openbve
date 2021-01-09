@@ -1,0 +1,4 @@
+CreateMeshBuilder,
+Cube, 0.03, 0.01, 0.1
+LoadTexture,on.bmp
+SetEmissiveColor,255,0,0,

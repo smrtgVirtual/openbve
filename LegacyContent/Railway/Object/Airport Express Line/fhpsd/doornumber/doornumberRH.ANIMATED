@@ -1,0 +1,106 @@
+;Glass;
+[Object]
+States = numbers\stixr24.csv
+Position = 2,1.17,-133.05
+
+[Object]
+States = numbers\stixr23.csv
+Position = 2,1.17,-127.7
+
+[Object]
+States = numbers\stixr22.csv
+Position = 2,1.17,-122.35
+
+[Object]
+States = numbers\stixr21.csv
+Position = 2,1.17,-116.95
+
+;psd_c2
+;Glass;
+[Object]
+States = numbers\stixr20.csv
+Position = 2,1.17,-110.3
+
+[Object]
+States = numbers\stixr19.csv
+Position = 2,1.17,-105
+
+[Object]
+States = numbers\stixr18.csv
+Position = 2,1.17,-99.6
+
+[Object]
+States = numbers\stixr17.csv
+Position = 2,1.17,-94.2
+
+;psd_c3
+;Glass;
+[Object]
+States = numbers\stixr16.csv
+Position = 2,1.17,-87.55
+
+[Object]
+States = numbers\stixr15.csv
+Position = 2,1.17,-82.2
+
+[Object]
+States = numbers\stixr14.csv
+Position = 2,1.17,-76.8
+
+[Object]
+States = numbers\stixr13.csv
+Position = 2,1.17,-71.5
+
+;psd_c4
+;Glass;
+[Object]
+States = numbers\stixr12.csv
+Position = 2,1.17,-64.8
+
+[Object]
+States = numbers\stixr11.csv
+Position = 2,1.17,-59.5
+
+[Object]
+States = numbers\stixr10.csv
+Position = 2,1.17,-54.1
+
+[Object]
+States = numbers\stixr9.csv
+Position = 2,1.17,-48.7
+
+;psd_c5
+;Glass;
+[Object]
+States = numbers\stixr8.csv
+Position = 2,1.17,-42.05
+
+[Object]
+States = numbers\stixr7.csv
+Position = 2,1.17,-36.75
+
+[Object]
+States = numbers\stixr6.csv
+Position = 2,1.17,-31.35
+
+[Object]
+States = numbers\stixr5.csv
+Position = 2,1.17,-25.95
+
+;psd_c6
+;Glass;
+[Object]
+States = numbers\stixr4.csv
+Position = 2,1.17,-19.20
+
+[Object]
+States = numbers\stixr3.csv
+Position = 2,1.17,-13.85
+
+[Object]
+States = numbers\stixr2.csv
+Position = 2,1.17,-8.50
+
+[Object]
+States = numbers\stixr1.csv
+Position = 2,1.17,-3.10

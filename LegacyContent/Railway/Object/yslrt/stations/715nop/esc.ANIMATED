@@ -1,0 +1,20 @@
+[Object]
+States = stairs.csv
+Position = -1.2,0,0
+
+[Object]
+States = escbegin.csv
+Position = 0,0,0
+
+[Object]
+States = escside.csv
+Position = 0,0,0
+
+[Object]
+States = eschandbegin.csv
+Position = 0,0,0
+Position = 0,0.55,0.5
+
+[Object]
+States = escfloor.csv
+Position = 0,0,1

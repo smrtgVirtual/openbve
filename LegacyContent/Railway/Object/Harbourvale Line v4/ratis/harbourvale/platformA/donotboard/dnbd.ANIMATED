@@ -1,0 +1,5 @@
+[Object]
+States = dnbdr.csv, dnbdw.csv
+StateFunction = value == 0
+RefreshRate = 1
+Position = 0,0,0

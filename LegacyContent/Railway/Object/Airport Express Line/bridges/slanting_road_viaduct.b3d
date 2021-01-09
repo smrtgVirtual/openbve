@@ -1,0 +1,132 @@
+;author=Uwe Post,Sanford Mace
+;description=Ramp for 4 land Blve, no tunnel
+;copyright=RouteBuilder object library license
+
+; straﬂe
+
+[MeshBuilder]
+Vertex -56, 7.01, 8
+Vertex 52, 0, 8
+Vertex 52, 0, -5
+Vertex -56, 7.01, -5
+Face 0, 1, 2, 3
+
+[Texture]
+Load ..\roads\road2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -56, 7.01, 21
+Vertex 52, 0, 21
+Vertex 52, 0, 8
+Vertex -56, 7.01, 8
+Face 0, 1, 2, 3
+
+[Texture]
+Load ..\roads\road2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -60, 7.01, 21
+Vertex -56, 7.01, 21
+Vertex -56, 7.01, 8
+Vertex -60, 7.01, 8
+Face 0, 1, 2, 3
+[Texture]
+Load ..\roads\road2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -60, 7.01, 8
+Vertex -56, 7.01, 8
+Vertex -56, 7.01, -5
+Vertex -60, 7.01, -5
+Face 0, 1, 2, 3
+[Texture]
+Load ..\roads\road2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+
+; vordere Wand
+
+[MeshBuilder]
+Vertex -56, -10.5, -5
+Vertex -56, 7.5, -5
+Vertex 50, 1, -5
+Vertex 50, -7.5, -5
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 25
+Coordinates 3, 0, 25
+
+
+; hintere Wand
+
+[MeshBuilder]
+Vertex -56, -10.5, 21
+Vertex -56, 7.5, 21
+Vertex 50, 1, 21
+Vertex 50, -7.5, 21
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 25
+Coordinates 3, 0, 25
+
+[MeshBuilder]
+Vertex -60, -10.5, 21
+Vertex -60, 7.5, 21
+Vertex -56, 7.5, 21
+Vertex -56, -10.5, 21
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 25
+Coordinates 3, 0, 25
+
+[MeshBuilder]
+Vertex -60, -10.5, -5
+Vertex -60, 7.5, -5
+Vertex -56, 7.5, -5
+Vertex -56, -10.5, -5
+Face 0, 1, 2, 3
+Face 0,1,2,3
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 25
+Coordinates 3, 0, 25
+
+
+
+
+
+

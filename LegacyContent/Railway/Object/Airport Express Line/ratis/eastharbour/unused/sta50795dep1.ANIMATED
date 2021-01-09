@@ -1,0 +1,4 @@
+[Object]
+Position = 0, 0, 0.0005
+States = empty.csv, stadep1.csv, stadep1.csv
+StateFunction = If[time<50855,if[time<50795,if[time>50795,1,2],1],0]

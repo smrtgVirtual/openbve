@@ -1,0 +1,9 @@
+[Object]
+States = yps.csv, ypsB.csv
+StateFunction = if[destination==2102,value==0,-1]
+refreshrate = 0.8
+
+[Object]
+States = yps_left.csv
+StateFunction = if[destination==2102,0,-1]
+Position = 0,0,6.53

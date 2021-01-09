@@ -1,0 +1,22 @@
+[Object]
+States = stairs1.csv
+Position = -1.2,0,0
+
+[Object]
+States = escbegin1.csv
+Position = 0,0,0
+
+[Object]
+States = escside1.csv
+Position = 0,0,0
+
+[Object]
+States = eschandbegin1.csv
+Position = 0,0,0
+RotateXFunction = 3 * time
+Position = 0,0.55,-0.5
+
+[Object]
+States = escfloor1.csv
+TextureShiftYFunction = -3 * time
+Position = 0,0,1

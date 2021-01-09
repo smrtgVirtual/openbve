@@ -1,0 +1,10 @@
+[Object]
+States = nxt_yis.csv, nxt_yisB.csv
+StateFunction = if[destination==2003,value==0,-1]
+refreshrate = 0.8
+
+[Object]
+States = nxt_yis_left.csv, nxt_yis_leftB.csv
+StateFunction = if[destination==2003,value==0,-1]
+refreshrate = 0.8
+Position = 0,0,6.53

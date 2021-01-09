@@ -1,0 +1,14 @@
+CreateMeshBuilder,
+Cylinder,7,0.02,0.02,0.1
+SetColor,75,75,75
+Translate,-0.05,0,0
+LoadTexture,handle.bmp
+SetEmissiveColor,255,255,255
+Rotate,1,1,0,180
+
+CreateMeshBuilder,
+Cylinder,7,0.02,0.02,0.15
+SetColor,75,75,75
+Translate,0,-0.125,0
+LoadTexture,handle.bmp
+SetEmissiveColor,255,255,255

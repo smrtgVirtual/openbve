@@ -1,0 +1,86 @@
+;Author=Richard Long,Kevin Taylor,Sanford Mace
+;Description=Basic Dark Green Bus
+;Graphics from Kevin Taylor, used with permission to modify
+;front
+[MeshBuilder]
+Vertex 0, 0, 0
+Vertex 0, 3, 0
+Vertex 0, 3, 2.5
+Vertex 0, 0, 2.5
+Face 3, 2, 1, 0
+[Texture]
+Load greenfront.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+Transparent 0, 0, 255
+
+;right side
+[MeshBuilder]
+Vertex 11, 3, 0
+Vertex 11, 0, 0
+Vertex 0, 0, 0
+Vertex 0, 3, 0
+Face 0, 1, 2, 3
+[Texture]
+Load greenrightside.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+Transparent 0, 0, 255
+
+;left side
+[MeshBuilder]
+Vertex 11, 3, 2.5
+Vertex 11, 0, 2.5
+Vertex 0, 0, 2.5
+Vertex 0, 3, 2.5
+Face 3, 2, 1, 0
+[Texture]
+Load greenleftside.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+Transparent 0, 0, 255
+
+;back
+[meshbuilder]
+[MeshBuilder]
+Vertex 11, 0, 0
+Vertex 11, 3, 0
+Vertex 11, 3, 2.5
+Vertex 11, 0, 2.5
+Face 0, 1, 2, 3
+[Texture]
+Load greenback.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+Transparent 0, 0, 255
+
+;bottom
+[meshbuilder]
+Vertex 11, 0.5, 0
+Vertex 11, 0.5, 2.5
+Vertex 0, 0.5, 2.5
+Vertex 0, 0.5, 0
+Face 0, 1, 2, 3
+Color 10, 10, 10, 255
+
+;top
+[meshbuilder]
+Vertex 11, 3, 0
+Vertex 11, 3, 2.5
+Vertex 0, 3, 2.5
+Vertex 0, 3, 0
+Face 3, 2, 1, 0
+[texture]
+Load top.bmp
+Coordinates 0, 1, 0 
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 1, 1

@@ -1,0 +1,34 @@
+[Include]
+hl01countdownf.ANIMATED
+Position = 0, 0, -7
+
+[Include]
+harbourvale\platformA\bkjd.ANIMATED
+harbourvale\platformB\bkjd.ANIMATED
+default\frame side.csv
+harbourvale\nextPlatformB.csv
+default\topbar.csv
+ratisclock\ratisclock.ANIMATED
+Position = -3.5, 3.8, -7
+
+[Object]
+Position = -3.5, 3.8, -7
+States = empty.csv, empty.csv, harbourvale\platformA\hbv1.csv
+StateFunction = If[trackdistance>-50,if[trackdistance>120,if[trackdistance<-120,1,2],1],0]
+;1st - after train departs
+;2nd - when train in station
+;3rd - before train arrives
+
+[Include]
+harbourvale\platformA\bkjd.ANIMATED
+harbourvale\platformB\bkjd.ANIMATED
+default\frame side.csv
+harbourvale\nextPlatformB.csv
+default\topbar.csv
+ratisclock\ratisclock.ANIMATED
+Position = -8.5, 3.8, -7
+
+[Object]
+Position = -8.5, 3.8, -7
+States = empty.csv, empty.csv, harbourvale\platformA\hbv1.csv
+StateFunction = If[trackdistance>-50,if[trackdistance>120,if[trackdistance<-120,1,2],1],0]

@@ -1,0 +1,260 @@
+;Door Set 1;
+[Object]
+States = door_1a.csv
+Position = 0,0,6
+
+[Object]
+States = door_2a.csv
+Position = 0,0,6
+
+[Object]
+States = door_1r.csv
+Position = 17,0,6
+
+
+[Object]
+States = door_2r.csv
+Position = 17,0,6
+
+
+[Object]
+States = door_1a.csv
+Position = 24,0,6
+
+[Object]
+States = door_2a.csv
+Position = 24,0,6
+
+[Object]
+States = door_1r.csv
+Position = 41,0,6
+TranslateZFunction = if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]
+
+[Object]
+States = door_2r.csv
+Position = 41,0,6
+TranslateZFunction = minus[if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]]
+
+[Object]
+States = queue.csv
+Position = 0,0,6
+
+[Object]
+States = queue_r.csv
+Position = 0,0,6
+
+[Object]
+States = queue.csv
+Position = 24,0,6
+
+[Object]
+States = queue_r.csv
+Position = 24,0,6
+
+;Door Set 2;
+[Object]
+States = door_1a.csv
+Position = 0,0,12.25
+
+[Object]
+States = door_2a.csv
+Position = 0,0,12.25
+
+[Object]
+States = door_1r.csv
+Position = 17,0,12.25
+
+
+[Object]
+States = door_2r.csv
+Position = 17,0,12.25
+
+
+
+[Object]
+States = door_1a.csv
+Position = 24,0,12.25
+
+[Object]
+States = door_2a.csv
+Position = 24,0,12.25
+
+[Object]
+States = door_1r.csv
+Position = 41,0,12.25
+TranslateZFunction = if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]
+
+[Object]
+States = door_2r.csv
+Position = 41,0,12.25
+TranslateZFunction = minus[if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]]
+
+[Object]
+States = queue.csv
+Position = 0,0,12.25
+
+[Object]
+States = queue_r.csv
+Position = 0,0,12.25
+
+[Object]
+States = queue.csv
+Position = 24,0,12.25
+
+[Object]
+States = queue_r.csv
+Position = 24,0,12.25
+
+;Door Set 3;
+[Object]
+States = door_1a.csv
+Position = 0,0,19
+
+[Object]
+States = door_2a.csv
+Position = 0,0,19
+
+[Object]
+States = door_1r.csv
+Position = 17,0,19
+
+
+[Object]
+States = door_2r.csv
+Position = 17,0,19
+
+
+[Object]
+States = door_1a.csv
+Position = 24,0,19
+
+[Object]
+States = door_2a.csv
+Position = 24,0,19
+
+[Object]
+States = door_1r.csv
+Position = 41,0,19
+TranslateZFunction = if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]
+
+[Object]
+States = door_2r.csv
+Position = 41,0,19
+TranslateZFunction = minus[if[TrackDistance<0.5 & TrackDistance>(-0.5), if[leftdoorstarget == 1, if[leftdoors>=0.2,((leftdoors-0.2)*(leftdoors-0.2))/0.64,0],leftdoors*leftdoors], 0]]
+
+[Object]
+States = queue.csv
+Position = 0,0,19
+
+[Object]
+States = queue_r.csv
+Position = 0,0,19
+
+[Object]
+States = queue.csv
+Position = 24,0,19
+
+[Object]
+States = queue_r.csv
+Position = 24,0,19
+
+;Platform;
+[Object]
+States = stn0.csv
+
+[Object]
+States = stn1.csv
+Position = 24,0,0
+
+;Seat Pair 1;
+[Object]
+States = seat.csv
+Position = 6.5,1,6
+
+[Object]
+States = seat.csv
+Position = 10.5,1,6
+
+[Object]
+States = seat.csv
+Position = 30.5,1,6
+
+[Object]
+States = seat.csv
+Position = 34.5,1,6
+
+;Seat Pair 2;
+[Object]
+States = seat.csv
+Position = 6.5,1,19
+
+[Object]
+States = seat.csv
+Position = 10.5,1,19
+
+[Object]
+States = seat.csv
+Position = 30.5,1,19
+
+[Object]
+States = seat.csv
+Position = 34.5,1,19
+
+;LightWORKING L YSH;
+[Object]
+States = door closing\left\off.csv, door closing\left\on.csv
+Position= 39, 3.05, 5.8
+StateFunction = if[leftDoors,if[leftDoorsTarget,1,value == 0],0]
+RefreshRate = 0.5
+
+[Object]
+States = door closing\left\off.csv, door closing\left\on.csv
+Position= 39, 3.05, 12.05
+StateFunction = if[leftDoors,if[leftDoorsTarget,1,value == 0],0]
+RefreshRate = 0.5
+
+[Object]
+States = door closing\left\off.csv, door closing\left\on.csv
+Position= 39, 3.05, 18.8
+StateFunction = if[leftDoors,if[leftDoorsTarget,1,value == 0],0]
+RefreshRate = 0.5
+
+;LightDEAD R YNPCPC;
+[Object]
+States = door closing\off.csv, door closing\on.csv
+Position= 2, 3.05, 5.8
+
+[Object]
+States = door closing\off.csv, door closing\on.csv
+Position= 2, 3.05, 12.05
+
+[Object]
+States = door closing\off.csv, door closing\on.csv
+Position= 2, 3.05, 18.8
+
+;LightDEAD L KTPH;
+[Object]
+States = door closing\left\off.csv, door closing\left\on.csv
+Position= 15, 3.05, 5.8
+
+[Object]
+States = door closing\left\off.csv, door closing\left\on.csv
+Position= 15, 3.05, 12.05
+
+[Object]
+States = door closing\left\off.csv, door closing\left\on.csv
+Position= 15, 3.05, 18.8
+
+
+;LightDEAD R BTP;
+[Object]
+States = door closing\off.csv, door closing\on.csv
+Position= 26, 3.05, 5.8
+
+[Object]
+States = door closing\off.csv, door closing\on.csv
+Position= 26, 3.05, 12.05
+
+[Object]
+States = door closing\off.csv, door closing\on.csv
+Position= 26, 3.05, 18.8

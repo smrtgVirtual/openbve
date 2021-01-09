@@ -1,0 +1,44 @@
+;ClockTime
+;Clock tells time
+
+;digital RATIS clock
+;originally made by Anthony_B
+;modified by Flip
+;Adapted for NSEWL RATIS by boylush
+;you are allowed to use this work in your routes but you have to keep the header intact
+
+; Hours
+
+[Object]
+States = digit2.csv
+Position = -1.920, 4.200, 0.200
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 12] * 0.1]
+
+[Object]
+States = digit2.csv
+Position = -1.950, 4.200, 0.200
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 12]]
+
+[Object]
+States = digit_separator2.csv
+Position = -1.985, 4.200, 0.200
+
+; Minutes
+
+[Object]
+States = digit2.csv
+Position = -2.005, 4.200, 0.200
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.0166666666666667, 60] * 0.1]
+
+[Object]
+States = digit2.csv
+Position = -2.033, 4.200, 0.200
+TextureShiftYFunction = 0.1 * floor[time * 0.0166666666666667]
+
+; Letters
+
+[Object]
+States = letters2.csv
+Position = -2.065, 4.174, 0.200
+TextureShiftYFunction = 0.5 * floor[mod[time * 0.000023148148148148148148148148148148, 3]]
+

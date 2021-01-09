@@ -1,0 +1,12 @@
+﻿[MeshBuilder]
+Vertex -0.03, -0.3, -0.02
+Vertex -0.03, 0.3, -0.02
+Vertex 0.03, 0.3, -0.02
+Vertex 0.03, -0.3, -0.02
+Face 0, 1, 2, 3
+Load minute.png
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+Color 0, 0, 0

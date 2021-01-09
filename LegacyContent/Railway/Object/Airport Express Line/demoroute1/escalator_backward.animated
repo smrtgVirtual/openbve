@@ -1,0 +1,6 @@
+﻿[Object]
+States = Escalator_b.b3d
+
+[Object]
+States = Stairs_b.b3d
+TextureShiftYFunction = time

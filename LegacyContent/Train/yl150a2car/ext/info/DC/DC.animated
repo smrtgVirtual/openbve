@@ -1,0 +1,11 @@
+[Object]
+States = DC1.csv, DC2.csv, DC3.csv, DC4.csv, DC5.csv, DC6.csv, DC7.csv, DC8.csv, DC9.csv
+StateFunction = if[klaxon == 2, mod[value + 1, 21],-1]
+refreshrate = 1.00
+Position = -0.001,0,0
+
+[Object]
+States = DC1L.csv, DC2L.csv, DC3L.csv, DC4L.csv, DC5L.csv, DC6L.csv, DC7L.csv, DC8L.csv, DC9L.csv
+StateFunction = if[klaxon == 2, mod[value + 1, 21],-1]
+refreshrate = 1.00
+Position = 0.001,0,6.53
